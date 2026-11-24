@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Gingerbread</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FCE8D5" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#FF5252" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#66BB6A" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <path fill="#D62828" data-region-name="gingerbread_body" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 300 95 C 348 95, 368 135, 348 178 L 438 205 C 468 215, 458 265, 422 258 L 358 248 L 398 435 C 408 478, 348 495, 332 452 L 300 365 L 268 452 C 252 495, 192 478, 202 435 L 242 248 L 178 258 C 142 265, 132 215, 162 205 L 252 178 C 232 135, 252 95, 300 95 Z"/>
+    <circle fill="#17834A" data-region-name="icing_button_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="235" r="14"/>
+    <circle fill="#F5C451" data-region-name="icing_button_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="285" r="14"/>
+    <circle fill="#FF8A65" data-region-name="icing_button_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="335" r="14"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+    <circle cx="280" cy="138" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="278.1" cy="136.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <circle cx="320" cy="138" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="318.1" cy="136.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <path d="M 286.0 158 Q 300 170 314.0 158" fill="none" stroke="#111111" stroke-width="5.5" stroke-linecap="round" pointer-events="none"/>
+  </g>
+</svg>

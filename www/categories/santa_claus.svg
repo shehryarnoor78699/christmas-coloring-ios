@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Santa Claus</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FFE5EC" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#FF8A65" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#4FC3F7" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <path fill="#BA68C8" data-region-name="santa_gift_sack" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 215 285 C 105 295, 95 465, 215 472 C 285 472, 290 340, 215 285 Z"/>
+    <polygon fill="#FFF8EC" data-region-name="sack_gift_box" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="145,255 222,232 238,288 162,308"/>
+    <polygon fill="#8D6E63" data-region-name="sack_gift_ribbon" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="178,245 196,240 212,295 194,300"/>
+    <ellipse fill="#FF5252" data-region-name="sack_bow_l" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="175" cy="235" rx="18" ry="10"/>
+    <ellipse fill="#66BB6A" data-region-name="sack_bow_r" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="202" cy="228" rx="18" ry="10"/>
+    <ellipse fill="#D62828" data-region-name="left_boot" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="252" cy="505" rx="48" ry="22"/>
+    <ellipse fill="#17834A" data-region-name="right_boot" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="368" cy="505" rx="48" ry="22"/>
+    <path fill="#F5C451" data-region-name="left_pant_leg" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 225 425 L 288 425 L 282 492 L 222 492 Z"/>
+    <path fill="#FF8A65" data-region-name="right_pant_leg" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 332 425 L 395 425 L 398 492 L 338 492 Z"/>
+    <path fill="#4FC3F7" data-region-name="waving_arm" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 388 275 Q 455 245 475 185 L 425 168 Q 405 220 372 245 Z"/>
+    <ellipse fill="#BA68C8" data-region-name="waving_cuff" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="450" cy="174" rx="34" ry="20"/>
+    <path fill="#FFF8EC" data-region-name="waving_mitten" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 432 162 C 425 112, 488 108, 482 162 Z"/>
+    <path fill="#8D6E63" data-region-name="santa_red_coat" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 222 265 Q 310 245 398 265 L 425 418 Q 310 435 195 418 Z"/>
+    <path fill="#FF5252" data-region-name="coat_fur_trim" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 186 398 Q 310 422 434 398 Q 438 438 422 442 Q 310 462 198 442 Q 182 438 186 398 Z"/>
+    <path fill="#66BB6A" data-region-name="santa_black_belt" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 208 342 Q 310 358 412 342 L 416 376 Q 310 392 204 376 Z"/>
+    <rect fill="#D62828" data-region-name="belt_gold_buckle" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="302" y="336" width="56" height="50" rx="10"/>
+    <rect fill="#17834A" data-region-name="belt_buckle_center" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="316" y="348" width="28" height="26" rx="5"/>
+    <path fill="#F5C451" data-region-name="front_arm" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 218 275 Q 175 325 255 352 L 272 312 Q 232 298 245 268 Z"/>
+    <ellipse fill="#FF8A65" data-region-name="front_cuff" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="262" cy="332" rx="18" ry="26"/>
+    <circle fill="#4FC3F7" data-region-name="front_mitten" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="284" cy="334" r="24"/>
+    <path fill="#BA68C8" data-region-name="santa_fluffy_beard" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 228 198 C 198 235, 202 295, 248 318 C 275 345, 345 345, 378 315 C 418 290, 418 235, 388 198 Z"/>
+    <path fill="#FFF8EC" data-region-name="santa_face" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 248 165 Q 310 145 372 165 L 372 218 Q 310 232 248 218 Z"/>
+    <path fill="#8D6E63" data-region-name="santa_mustache" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 310 206 C 282 192, 242 205, 236 226 C 262 238, 292 228, 310 218 C 328 228, 358 238, 384 226 C 378 205, 338 192, 310 206 Z"/>
+    <path fill="#FF5252" data-region-name="santa_mouth" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 292 222 Q 310 248 328 222 Z"/>
+    <ellipse fill="#66BB6A" data-region-name="santa_nose" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="312" cy="196" rx="17" ry="13"/>
+    <path fill="#D62828" data-region-name="santa_hat_red" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 232 162 C 242 75, 358 72, 388 158 C 310 135, 255 145, 232 162 Z"/>
+    <path fill="#17834A" data-region-name="santa_hat_tail" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 238 125 Q 185 155 192 210 L 228 185 Z"/>
+    <path fill="#F5C451" data-region-name="santa_hat_brim" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 228 152 Q 310 118 396 158 Q 402 186 382 192 Q 310 155 232 186 Q 216 178 228 152 Z"/>
+    <circle fill="#FF8A65" data-region-name="santa_hat_pompom" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="194" cy="212" r="26"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+    <path d="M 277.0 182 Q 286 171 295.0 182" fill="none" stroke="#111111" stroke-width="5.5" stroke-linecap="round" pointer-events="none"/>
+    <path d="M 329.0 182 Q 338 171 347.0 182" fill="none" stroke="#111111" stroke-width="5.5" stroke-linecap="round" pointer-events="none"/>
+  </g>
+</svg>

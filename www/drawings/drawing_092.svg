@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Twin Ribbon Christmas Bells</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path id="region_2" data-region-id="region_2" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_3" data-region-id="region_3" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle id="region_4" data-region-id="region_4" data-region-name="bell_clapper" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="425" r="26"/>
+    <path id="region_5" data-region-id="region_5" data-region-name="bell_dome" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 215 215 C 215 135, 385 135, 385 215 L 435 395 Q 300 415 165 395 Z"/>
+    <rect id="region_6" data-region-id="region_6" data-region-name="bell_rim" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="158" y="378" width="284" height="30" rx="14"/>
+    <ellipse id="region_7" data-region-id="region_7" data-region-name="bell_bow_left" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="242" cy="142" rx="52" ry="28"/>
+    <ellipse id="region_8" data-region-id="region_8" data-region-name="bell_bow_right" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="358" cy="142" rx="52" ry="28"/>
+    <circle id="region_9" data-region-id="region_9" data-region-name="bell_bow_knot" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="145" r="22"/>
+    <polygon id="region_10" data-region-id="region_10" data-region-name="zenith_star" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="300.0,34.0 304.7,45.5 317.1,46.4 307.6,54.5 310.6,66.6 300.0,60.0 289.4,66.6 292.4,54.5 282.9,46.4 295.3,45.5"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

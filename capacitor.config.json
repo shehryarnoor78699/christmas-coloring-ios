@@ -1,0 +1,11 @@
+{
+  "appId": "com.shehryarnoor.christmascoloring.ios",
+  "appName": "Christmas Coloring Studio Pro",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#FDF9F0",
+    "preferredContentMode": "mobile"
+  }
+}

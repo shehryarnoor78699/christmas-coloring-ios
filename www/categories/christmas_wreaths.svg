@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Wreaths</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#E8F5E9" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#8D6E63" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#FF5252" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle fill="#66BB6A" data-region-name="wreath_outer" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="285" r="165"/>
+    <circle fill="#D62828" data-region-name="wreath_leaf_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="425.0" cy="285.0" r="36"/>
+    <circle fill="#17834A" data-region-name="wreath_leaf_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="388.4" cy="373.4" r="36"/>
+    <circle fill="#F5C451" data-region-name="wreath_leaf_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="410.0" r="36"/>
+    <circle fill="#FF8A65" data-region-name="wreath_leaf_4" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="211.6" cy="373.4" r="36"/>
+    <circle fill="#4FC3F7" data-region-name="wreath_leaf_5" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="175.0" cy="285.0" r="36"/>
+    <circle fill="#BA68C8" data-region-name="wreath_leaf_6" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="211.6" cy="196.6" r="36"/>
+    <circle fill="#FFF8EC" data-region-name="wreath_leaf_7" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="160.0" r="36"/>
+    <circle fill="#8D6E63" data-region-name="wreath_leaf_8" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="388.4" cy="196.6" r="36"/>
+    <circle fill="#FF5252" data-region-name="wreath_inner" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="285" r="78"/>
+    <ellipse fill="#66BB6A" data-region-name="wreath_bow_l" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="244" cy="420" rx="52" ry="28"/>
+    <ellipse fill="#D62828" data-region-name="wreath_bow_r" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="356" cy="420" rx="52" ry="28"/>
+    <polygon fill="#17834A" data-region-name="wreath_tail_l" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="285,430 245,515 282,515"/>
+    <polygon fill="#F5C451" data-region-name="wreath_tail_r" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="315,430 355,515 318,515"/>
+    <circle fill="#FF8A65" data-region-name="wreath_knot" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="420" r="24"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

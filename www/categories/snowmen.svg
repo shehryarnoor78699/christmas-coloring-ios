@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Snowmen</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#D9F0FF" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#BA68C8" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#FFF8EC" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle fill="#8D6E63" data-region-name="snowman_lower_body" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="405" r="92"/>
+    <circle fill="#FF5252" data-region-name="snowman_upper_body" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="265" r="68"/>
+    <circle fill="#66BB6A" data-region-name="snowman_head" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="165" r="56"/>
+    <path fill="#D62828" data-region-name="snowman_scarf_collar" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 238 205 Q 300 222 362 205 L 358 236 Q 300 252 242 236 Z"/>
+    <path fill="#17834A" data-region-name="snowman_scarf_tail" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 255 225 L 232 315 L 268 318 L 282 232 Z"/>
+    <path fill="#F5C451" data-region-name="snowman_hat" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 244 132 C 252 65, 352 65, 368 135 Z"/>
+    <rect fill="#FF8A65" data-region-name="snowman_hat_brim" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="238" y="118" width="124" height="24" rx="12"/>
+    <circle fill="#4FC3F7" data-region-name="snowman_hat_pom" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="374" cy="128" r="20"/>
+    <polygon fill="#BA68C8" data-region-name="carrot_nose" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="296,160 346,170 296,180"/>
+    <circle fill="#FFF8EC" data-region-name="coal_btn_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="268" r="9"/>
+    <circle fill="#8D6E63" data-region-name="coal_btn_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="302" r="9"/>
+    <circle fill="#FF5252" data-region-name="coal_btn_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="365" r="10"/>
+    <circle fill="#66BB6A" data-region-name="coal_btn_4" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="405" r="10"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+    <circle cx="280" cy="148" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="278.1" cy="146.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <circle cx="318" cy="148" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="316.1" cy="146.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <path d="M 285.0 185 Q 300 197 315.0 185" fill="none" stroke="#111111" stroke-width="5.5" stroke-linecap="round" pointer-events="none"/>
+    <line x1="234" y1="255" x2="165" y2="215" stroke="#111111" stroke-width="4.5" stroke-linecap="round" pointer-events="none"/>
+    <line x1="185" y1="226" x2="168" y2="198" stroke="#111111" stroke-width="4.5" stroke-linecap="round" pointer-events="none"/>
+    <line x1="366" y1="255" x2="435" y2="215" stroke="#111111" stroke-width="4.5" stroke-linecap="round" pointer-events="none"/>
+    <line x1="415" y1="226" x2="432" y2="198" stroke="#111111" stroke-width="4.5" stroke-linecap="round" pointer-events="none"/>
+  </g>
+</svg>

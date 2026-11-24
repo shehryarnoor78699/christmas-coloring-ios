@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Trees</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#DCF5E3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#4FC3F7" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#BA68C8" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <rect fill="#FFF8EC" data-region-name="tree_trunk" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="274" y="435" width="52" height="62" rx="8"/>
+    <path fill="#8D6E63" data-region-name="tree_tier_bottom" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 300 255 L 145 425 Q 195 455 248 425 Q 300 458 352 425 Q 405 455 455 425 Z"/>
+    <path fill="#FF5252" data-region-name="tree_tier_middle" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 300 175 L 178 325 Q 220 352 262 325 Q 300 352 338 325 Q 380 352 422 325 Z"/>
+    <path fill="#66BB6A" data-region-name="tree_tier_top" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 300 105 L 212 228 Q 255 252 300 228 Q 345 252 388 228 Z"/>
+    <polygon fill="#D62828" data-region-name="tree_star_topper" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="300.0,52.0 309.4,75.1 334.2,76.9 315.2,92.9 321.2,117.1 300.0,104.0 278.8,117.1 284.8,92.9 265.8,76.9 290.6,75.1"/>
+    <circle fill="#17834A" data-region-name="tree_bauble_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="268" cy="185" r="15"/>
+    <circle fill="#F5C451" data-region-name="tree_bauble_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="336" cy="195" r="15"/>
+    <circle fill="#FF8A65" data-region-name="tree_bauble_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="242" cy="285" r="15"/>
+    <circle fill="#4FC3F7" data-region-name="tree_bauble_4" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="312" cy="275" r="15"/>
+    <circle fill="#BA68C8" data-region-name="tree_bauble_5" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="365" cy="295" r="15"/>
+    <circle fill="#FFF8EC" data-region-name="tree_bauble_6" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="215" cy="385" r="15"/>
+    <circle fill="#8D6E63" data-region-name="tree_bauble_7" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="285" cy="378" r="15"/>
+    <circle fill="#FF5252" data-region-name="tree_bauble_8" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="372" cy="390" r="15"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

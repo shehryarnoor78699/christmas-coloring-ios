@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Ornaments</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#F3E5F5" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#FF8A65" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#4FC3F7" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle fill="#BA68C8" data-region-name="bauble_ring" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="108" r="18"/>
+    <rect fill="#FFF8EC" data-region-name="bauble_cap" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="266" y="118" width="68" height="34" rx="8"/>
+    <circle fill="#8D6E63" data-region-name="bauble_main" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="150"/>
+    <path fill="#FF5252" data-region-name="bauble_stripe_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 158 245 Q 300 215 442 245 L 448 285 Q 300 255 152 285 Z"/>
+    <path fill="#66BB6A" data-region-name="bauble_stripe_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 152 310 Q 300 340 448 310 L 440 350 Q 300 380 160 350 Z"/>
+    <polygon fill="#D62828" data-region-name="bauble_star" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="300.0,253.0 310.6,280.4 339.9,282.0 317.1,300.6 324.7,329.0 300.0,313.0 275.3,329.0 282.9,300.6 260.1,282.0 289.4,280.4"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

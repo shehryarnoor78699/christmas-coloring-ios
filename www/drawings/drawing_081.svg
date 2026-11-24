@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Cozy Gingerbread Cottage</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <polygon id="region_2" data-region-id="region_2" data-region-name="bg_left_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,115 18,220 132,220"/>
+    <polygon id="region_3" data-region-id="region_3" data-region-name="bg_left_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,190 8,305 142,305"/>
+    <polygon id="region_4" data-region-id="region_4" data-region-name="bg_left_pine_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,275 4,405 148,405"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="bg_right_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,225 485,310 585,310"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="bg_right_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,285 475,385 592,385"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_8" data-region-id="region_8" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <path id="region_9" data-region-id="region_9" data-region-name="gingerbread_body" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 300 95 C 348 95, 368 135, 348 178 L 438 205 C 468 215, 458 265, 422 258 L 358 248 L 398 435 C 408 478, 348 495, 332 452 L 300 365 L 268 452 C 252 495, 192 478, 202 435 L 242 248 L 178 258 C 142 265, 132 215, 162 205 L 252 178 C 232 135, 252 95, 300 95 Z"/>
+    <circle id="region_10" data-region-id="region_10" data-region-name="icing_button_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="235" r="14"/>
+    <circle id="region_11" data-region-id="region_11" data-region-name="icing_button_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="285" r="14"/>
+    <circle id="region_12" data-region-id="region_12" data-region-name="icing_button_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="335" r="14"/>
+    <circle id="region_13" data-region-id="region_13" data-region-name="snow_orb_l" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="82" cy="95" r="15"/>
+    <circle id="region_14" data-region-id="region_14" data-region-name="snow_orb_r" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="518" cy="95" r="15"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+    <circle cx="280" cy="138" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="278.1" cy="136.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <circle cx="320" cy="138" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="318.1" cy="136.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <path d="M 286.0 158 Q 300 170 314.0 158" fill="none" stroke="#111111" stroke-width="5.8" stroke-linecap="round" pointer-events="none"/>
+  </g>
+</svg>

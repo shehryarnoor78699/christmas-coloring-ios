@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Classic Nutcracker Face</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path id="region_2" data-region-id="region_2" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_3" data-region-id="region_3" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle id="region_4" data-region-id="region_4" data-region-name="globe_sphere" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="265" r="148"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="globe_pine" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="225,345 300,205 375,345"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="globe_star" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="300.0,168.0 305.9,183.9 322.8,184.6 309.5,195.1 314.1,211.4 300.0,202.0 285.9,211.4 290.5,195.1 277.2,184.6 294.1,183.9"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="globe_snow" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 168 335 Q 300 310 432 335 Q 405 395 300 395 Q 195 395 168 335 Z"/>
+    <polygon id="region_8" data-region-id="region_8" data-region-name="globe_base" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="185,385 415,385 445,475 155,475"/>
+    <rect id="region_9" data-region-id="region_9" data-region-name="globe_rim" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="175" y="375" width="250" height="24" rx="10"/>
+    <rect id="region_10" data-region-id="region_10" data-region-name="globe_plaque" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="235" y="418" width="130" height="34" rx="8"/>
+    <rect id="region_11" data-region-id="region_11" data-region-name="fg_gift_l" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="52" y="485" width="48" height="44" rx="6"/>
+    <rect id="region_12" data-region-id="region_12" data-region-name="fg_gift_r" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="500" y="485" width="48" height="44" rx="6"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

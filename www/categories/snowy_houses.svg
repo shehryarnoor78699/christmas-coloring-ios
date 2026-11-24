@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Snowy Houses</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FFF0D9" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#FFF8EC" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#8D6E63" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <rect fill="#FF5252" data-region-name="chimney" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="375" y="145" width="46" height="95" rx="4"/>
+    <rect fill="#66BB6A" data-region-name="chimney_snow" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="368" y="138" width="60" height="18" rx="6"/>
+    <rect fill="#D62828" data-region-name="cottage_wall" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="145" y="265" width="310" height="215" rx="8"/>
+    <polygon fill="#17834A" data-region-name="cottage_roof" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="115,275 300,135 485,275"/>
+    <rect fill="#F5C451" data-region-name="cottage_door" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="266" y="355" width="68" height="125" rx="30"/>
+    <circle fill="#FF8A65" data-region-name="cottage_wreath" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="395" r="20"/>
+    <rect fill="#4FC3F7" data-region-name="cottage_win_l" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="175" y="325" width="64" height="64" rx="6"/>
+    <rect fill="#BA68C8" data-region-name="cottage_win_r" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="361" y="325" width="64" height="64" rx="6"/>
+    <circle fill="#FFF8EC" data-region-name="cottage_attic_win" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="225" r="26"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

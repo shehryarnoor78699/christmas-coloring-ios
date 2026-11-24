@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Gifts</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FFF6C8" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#8D6E63" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#FF5252" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <rect fill="#66BB6A" data-region-name="big_gift_box" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="145" y="235" width="225" height="225" rx="12"/>
+    <rect fill="#D62828" data-region-name="big_gift_lid" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="132" y="198" width="250" height="44" rx="10"/>
+    <rect fill="#17834A" data-region-name="big_gift_v_ribbon" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="240" y="198" width="36" height="262"/>
+    <rect fill="#F5C451" data-region-name="big_gift_h_ribbon" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="145" y="325" width="225" height="34"/>
+    <ellipse fill="#FF8A65" data-region-name="big_bow_left" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="215" cy="175" rx="44" ry="24"/>
+    <ellipse fill="#4FC3F7" data-region-name="big_bow_right" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="175" rx="44" ry="24"/>
+    <circle fill="#BA68C8" data-region-name="big_bow_knot" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="258" cy="182" r="18"/>
+    <rect fill="#FFF8EC" data-region-name="small_gift_box" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="315" y="335" width="155" height="150" rx="10"/>
+    <rect fill="#8D6E63" data-region-name="small_gift_lid" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="305" y="308" width="175" height="32" rx="8"/>
+    <rect fill="#FF5252" data-region-name="small_gift_v_ribbon" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="380" y="308" width="26" height="177"/>
+    <rect fill="#66BB6A" data-region-name="small_gift_h_ribbon" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="315" y="398" width="155" height="26"/>
+    <ellipse fill="#D62828" data-region-name="small_bow_left" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="362" cy="292" rx="32" ry="18"/>
+    <ellipse fill="#17834A" data-region-name="small_bow_right" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="422" cy="292" rx="32" ry="18"/>
+    <circle fill="#F5C451" data-region-name="small_bow_knot" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="392" cy="296" r="14"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

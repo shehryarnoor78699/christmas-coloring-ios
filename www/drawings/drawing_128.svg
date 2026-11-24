@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Kitten Peeking from Stocking</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <polygon id="region_2" data-region-id="region_2" data-region-name="bg_left_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,115 18,220 132,220"/>
+    <polygon id="region_3" data-region-id="region_3" data-region-name="bg_left_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,190 8,305 142,305"/>
+    <polygon id="region_4" data-region-id="region_4" data-region-name="bg_left_pine_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,275 4,405 148,405"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="bg_right_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,225 485,310 585,310"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="bg_right_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,285 475,385 592,385"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_8" data-region-id="region_8" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <path id="region_9" data-region-id="region_9" data-region-name="stocking_main" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 240 175 L 360 175 L 360 385 Q 360 465 285 465 L 185 465 Q 135 465 135 412 Q 135 362 190 362 L 240 362 Z"/>
+    <path id="region_10" data-region-id="region_10" data-region-name="stocking_heel" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 312 395 L 360 395 Q 360 465 295 465 Z"/>
+    <path id="region_11" data-region-id="region_11" data-region-name="stocking_toe" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 185 362 L 185 465 Q 135 465 135 412 Q 135 362 185 362 Z"/>
+    <rect id="region_12" data-region-id="region_12" data-region-name="stocking_fluffy_cuff" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="226" y="132" width="148" height="54" rx="22"/>
+    <polygon id="region_13" data-region-id="region_13" data-region-name="stocking_star" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="300.0,248.0 308.2,268.7 330.4,270.1 313.3,284.3 318.8,305.9 300.0,294.0 281.2,305.9 286.7,284.3 269.6,270.1 291.8,268.7"/>
+    <path id="region_14" data-region-id="region_14" data-region-name="heart_l" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 82 118.4 C 68.8 108.8, 68.8 96.8, 82 105.2 C 95.2 96.8, 95.2 108.8, 82 118.4 Z"/>
+    <path id="region_15" data-region-id="region_15" data-region-name="heart_r" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 518 118.4 C 504.8 108.8, 504.8 96.8, 518 105.2 C 531.2 96.8, 531.2 108.8, 518 118.4 Z"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

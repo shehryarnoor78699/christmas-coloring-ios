@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Heart Patterned Bauble</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <polygon id="region_2" data-region-id="region_2" data-region-name="bg_left_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="75,115 18,220 132,220"/>
+    <polygon id="region_3" data-region-id="region_3" data-region-name="bg_left_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="75,190 8,305 142,305"/>
+    <polygon id="region_4" data-region-id="region_4" data-region-name="bg_left_pine_3" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="75,275 4,405 148,405"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="bg_right_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="535,225 485,310 585,310"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="bg_right_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="535,285 475,385 592,385"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_8" data-region-id="region_8" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle id="region_9" data-region-id="region_9" data-region-name="bauble_ring" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="108" r="18"/>
+    <rect id="region_10" data-region-id="region_10" data-region-name="bauble_cap" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="266" y="118" width="68" height="34" rx="8"/>
+    <circle id="region_11" data-region-id="region_11" data-region-name="bauble_main" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="150"/>
+    <path id="region_12" data-region-id="region_12" data-region-name="bauble_stripe_1" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 158 245 Q 300 215 442 245 L 448 285 Q 300 255 152 285 Z"/>
+    <path id="region_13" data-region-id="region_13" data-region-name="bauble_stripe_2" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 152 310 Q 300 340 448 310 L 440 350 Q 300 380 160 350 Z"/>
+    <polygon id="region_14" data-region-id="region_14" data-region-name="bauble_star" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="300.0,253.0 310.6,280.4 339.9,282.0 317.1,300.6 324.7,329.0 300.0,313.0 275.3,329.0 282.9,300.6 260.1,282.0 289.4,280.4"/>
+    <circle id="region_15" data-region-id="region_15" data-region-name="snowball_l" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="110" cy="535" r="18"/>
+    <circle id="region_16" data-region-id="region_16" data-region-name="snowball_r" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="490" cy="535" r="18"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

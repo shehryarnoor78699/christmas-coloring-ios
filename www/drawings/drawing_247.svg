@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Sleigh Parked by North Pole</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <polygon id="region_2" data-region-id="region_2" data-region-name="bg_left_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,115 18,220 132,220"/>
+    <polygon id="region_3" data-region-id="region_3" data-region-name="bg_left_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,190 8,305 142,305"/>
+    <polygon id="region_4" data-region-id="region_4" data-region-name="bg_left_pine_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,275 4,405 148,405"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="bg_right_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,225 485,310 585,310"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="bg_right_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,285 475,385 592,385"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_8" data-region-id="region_8" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <rect id="region_9" data-region-id="region_9" data-region-name="sleigh_runner" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="125" y="445" width="350" height="18" rx="9"/>
+    <circle id="region_10" data-region-id="region_10" data-region-name="sleigh_curl" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="475" cy="430" r="26"/>
+    <rect id="region_11" data-region-id="region_11" data-region-name="strut_l" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="195" y="405" width="22" height="42"/>
+    <rect id="region_12" data-region-id="region_12" data-region-name="strut_r" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="375" y="405" width="22" height="42"/>
+    <rect id="region_13" data-region-id="region_13" data-region-name="sleigh_gift_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="185" y="215" width="88" height="95" rx="8"/>
+    <rect id="region_14" data-region-id="region_14" data-region-name="sleigh_gift_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="285" y="235" width="82" height="80" rx="8"/>
+    <path id="region_15" data-region-id="region_15" data-region-name="sleigh_hull" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 135 245 Q 135 410 245 410 L 415 410 Q 475 410 475 305 L 415 305 Q 375 305 355 275 L 135 275 Z"/>
+    <rect id="region_16" data-region-id="region_16" data-region-name="sleigh_trim" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="155" y="325" width="265" height="28" rx="10"/>
+    <polygon id="region_17" data-region-id="region_17" data-region-name="sleigh_star" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="285.0,319.0 290.3,331.7 304.0,332.8 293.6,341.8 296.8,355.2 285.0,348.0 273.2,355.2 276.4,341.8 266.0,332.8 279.7,331.7"/>
+    <polygon id="region_18" data-region-id="region_18" data-region-name="zenith_star" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="300.0,34.0 304.7,45.5 317.1,46.4 307.6,54.5 310.6,66.6 300.0,60.0 289.4,66.6 292.4,54.5 282.9,46.4 295.3,45.5"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

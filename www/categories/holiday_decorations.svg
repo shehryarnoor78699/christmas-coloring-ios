@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Holiday Decorations</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#F1F8E9" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#D62828" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#17834A" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle fill="#F5C451" data-region-name="globe_sphere" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="265" r="148"/>
+    <polygon fill="#FF8A65" data-region-name="globe_pine" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="225,345 300,205 375,345"/>
+    <polygon fill="#4FC3F7" data-region-name="globe_star" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="300.0,168.0 305.9,183.9 322.8,184.6 309.5,195.1 314.1,211.4 300.0,202.0 285.9,211.4 290.5,195.1 277.2,184.6 294.1,183.9"/>
+    <path fill="#BA68C8" data-region-name="globe_snow" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 168 335 Q 300 310 432 335 Q 405 395 300 395 Q 195 395 168 335 Z"/>
+    <polygon fill="#FFF8EC" data-region-name="globe_base" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="185,385 415,385 445,475 155,475"/>
+    <rect fill="#8D6E63" data-region-name="globe_rim" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="175" y="375" width="250" height="24" rx="10"/>
+    <rect fill="#FF5252" data-region-name="globe_plaque" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="235" y="418" width="130" height="34" rx="8"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

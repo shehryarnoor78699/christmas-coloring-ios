@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Skating Happy Snowman</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <polygon id="region_2" data-region-id="region_2" data-region-name="bg_left_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,115 18,220 132,220"/>
+    <polygon id="region_3" data-region-id="region_3" data-region-name="bg_left_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,190 8,305 142,305"/>
+    <polygon id="region_4" data-region-id="region_4" data-region-name="bg_left_pine_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,275 4,405 148,405"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="bg_right_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,225 485,310 585,310"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="bg_right_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,285 475,385 592,385"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_8" data-region-id="region_8" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle id="region_9" data-region-id="region_9" data-region-name="snowman_lower_body" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="405" r="92"/>
+    <circle id="region_10" data-region-id="region_10" data-region-name="snowman_upper_body" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="265" r="68"/>
+    <circle id="region_11" data-region-id="region_11" data-region-name="snowman_head" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="165" r="56"/>
+    <path id="region_12" data-region-id="region_12" data-region-name="snowman_scarf_collar" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 238 205 Q 300 222 362 205 L 358 236 Q 300 252 242 236 Z"/>
+    <path id="region_13" data-region-id="region_13" data-region-name="snowman_scarf_tail" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 255 225 L 232 315 L 268 318 L 282 232 Z"/>
+    <path id="region_14" data-region-id="region_14" data-region-name="snowman_hat" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 244 132 C 252 65, 352 65, 368 135 Z"/>
+    <rect id="region_15" data-region-id="region_15" data-region-name="snowman_hat_brim" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="238" y="118" width="124" height="24" rx="12"/>
+    <circle id="region_16" data-region-id="region_16" data-region-name="snowman_hat_pom" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="374" cy="128" r="20"/>
+    <polygon id="region_17" data-region-id="region_17" data-region-name="carrot_nose" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="296,160 346,170 296,180"/>
+    <circle id="region_18" data-region-id="region_18" data-region-name="coal_btn_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="268" r="9"/>
+    <circle id="region_19" data-region-id="region_19" data-region-name="coal_btn_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="302" r="9"/>
+    <circle id="region_20" data-region-id="region_20" data-region-name="coal_btn_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="365" r="10"/>
+    <circle id="region_21" data-region-id="region_21" data-region-name="coal_btn_4" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="405" r="10"/>
+    <rect id="region_22" data-region-id="region_22" data-region-name="fg_gift_l" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="52" y="485" width="48" height="44" rx="6"/>
+    <rect id="region_23" data-region-id="region_23" data-region-name="fg_gift_r" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="500" y="485" width="48" height="44" rx="6"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+    <circle cx="280" cy="148" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="278.1" cy="146.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <circle cx="318" cy="148" r="6.5" fill="#111111" pointer-events="none"/>
+    <circle cx="316.1" cy="146.1" r="2.1" fill="#FFFFFF" pointer-events="none"/>
+    <path d="M 285.0 185 Q 300 197 315.0 185" fill="none" stroke="#111111" stroke-width="5.8" stroke-linecap="round" pointer-events="none"/>
+    <line x1="234" y1="255" x2="165" y2="215" stroke="#111111" stroke-width="4.8" stroke-linecap="round" pointer-events="none"/>
+    <line x1="185" y1="226" x2="168" y2="198" stroke="#111111" stroke-width="4.8" stroke-linecap="round" pointer-events="none"/>
+    <line x1="366" y1="255" x2="435" y2="215" stroke="#111111" stroke-width="4.8" stroke-linecap="round" pointer-events="none"/>
+    <line x1="415" y1="226" x2="432" y2="198" stroke="#111111" stroke-width="4.8" stroke-linecap="round" pointer-events="none"/>
+  </g>
+</svg>

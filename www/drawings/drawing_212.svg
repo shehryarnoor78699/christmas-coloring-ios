@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Big Red Bow Wreath</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path id="region_2" data-region-id="region_2" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_3" data-region-id="region_3" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle id="region_4" data-region-id="region_4" data-region-name="wreath_outer" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="285" r="165"/>
+    <circle id="region_5" data-region-id="region_5" data-region-name="wreath_leaf_1" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="425.0" cy="285.0" r="36"/>
+    <circle id="region_6" data-region-id="region_6" data-region-name="wreath_leaf_2" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="388.4" cy="373.4" r="36"/>
+    <circle id="region_7" data-region-id="region_7" data-region-name="wreath_leaf_3" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="410.0" r="36"/>
+    <circle id="region_8" data-region-id="region_8" data-region-name="wreath_leaf_4" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="211.6" cy="373.4" r="36"/>
+    <circle id="region_9" data-region-id="region_9" data-region-name="wreath_leaf_5" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="175.0" cy="285.0" r="36"/>
+    <circle id="region_10" data-region-id="region_10" data-region-name="wreath_leaf_6" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="211.6" cy="196.6" r="36"/>
+    <circle id="region_11" data-region-id="region_11" data-region-name="wreath_leaf_7" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="160.0" r="36"/>
+    <circle id="region_12" data-region-id="region_12" data-region-name="wreath_leaf_8" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="388.4" cy="196.6" r="36"/>
+    <circle id="region_13" data-region-id="region_13" data-region-name="wreath_inner" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="285" r="78"/>
+    <ellipse id="region_14" data-region-id="region_14" data-region-name="wreath_bow_l" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="244" cy="420" rx="52" ry="28"/>
+    <ellipse id="region_15" data-region-id="region_15" data-region-name="wreath_bow_r" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="356" cy="420" rx="52" ry="28"/>
+    <polygon id="region_16" data-region-id="region_16" data-region-name="wreath_tail_l" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="285,430 245,515 282,515"/>
+    <polygon id="region_17" data-region-id="region_17" data-region-name="wreath_tail_r" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="315,430 355,515 318,515"/>
+    <circle id="region_18" data-region-id="region_18" data-region-name="wreath_knot" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="420" r="24"/>
+    <polygon id="region_19" data-region-id="region_19" data-region-name="zenith_star" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="300.0,34.0 304.7,45.5 317.1,46.4 307.6,54.5 310.6,66.6 300.0,60.0 289.4,66.6 292.4,54.5 282.9,46.4 295.3,45.5"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

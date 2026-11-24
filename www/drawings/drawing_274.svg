@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Easy Snowflake Medallion</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path id="region_2" data-region-id="region_2" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_3" data-region-id="region_3" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle id="region_4" data-region-id="region_4" data-region-name="mandala_outer" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="178"/>
+    <circle id="region_5" data-region-id="region_5" data-region-name="mandala_ring" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="138"/>
+    <circle id="region_6" data-region-id="region_6" data-region-name="mandala_gem_1" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="412.0" cy="295.0" r="28"/>
+    <circle id="region_7" data-region-id="region_7" data-region-name="mandala_gem_2" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="379.2" cy="374.2" r="28"/>
+    <circle id="region_8" data-region-id="region_8" data-region-name="mandala_gem_3" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="407.0" r="28"/>
+    <circle id="region_9" data-region-id="region_9" data-region-name="mandala_gem_4" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="220.8" cy="374.2" r="28"/>
+    <circle id="region_10" data-region-id="region_10" data-region-name="mandala_gem_5" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="188.0" cy="295.0" r="28"/>
+    <circle id="region_11" data-region-id="region_11" data-region-name="mandala_gem_6" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="220.8" cy="215.8" r="28"/>
+    <circle id="region_12" data-region-id="region_12" data-region-name="mandala_gem_7" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="183.0" r="28"/>
+    <circle id="region_13" data-region-id="region_13" data-region-name="mandala_gem_8" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="379.2" cy="215.8" r="28"/>
+    <polygon id="region_14" data-region-id="region_14" data-region-name="mandala_star" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" points="300.0,197.0 323.0,255.2 384.9,246.0 346.0,295.0 384.9,344.0 323.0,334.8 300.0,393.0 277.0,334.8 215.1,344.0 254.0,295.0 215.1,246.0 277.0,255.2"/>
+    <circle id="region_15" data-region-id="region_15" data-region-name="mandala_core" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="38"/>
+    <rect id="region_16" data-region-id="region_16" data-region-name="fg_gift_l" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="52" y="485" width="48" height="44" rx="6"/>
+    <rect id="region_17" data-region-id="region_17" data-region-name="fg_gift_r" fill="#FFFFFF" stroke="#111111" stroke-width="7.0" stroke-linecap="round" stroke-linejoin="round" x="500" y="485" width="48" height="44" rx="6"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

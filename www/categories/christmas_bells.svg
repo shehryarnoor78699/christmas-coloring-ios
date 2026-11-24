@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Bells</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FFF3CD" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#66BB6A" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#D62828" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle fill="#17834A" data-region-name="bell_clapper" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="425" r="26"/>
+    <path fill="#F5C451" data-region-name="bell_dome" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 215 215 C 215 135, 385 135, 385 215 L 435 395 Q 300 415 165 395 Z"/>
+    <rect fill="#FF8A65" data-region-name="bell_rim" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="158" y="378" width="284" height="30" rx="14"/>
+    <ellipse fill="#4FC3F7" data-region-name="bell_bow_left" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="242" cy="142" rx="52" ry="28"/>
+    <ellipse fill="#BA68C8" data-region-name="bell_bow_right" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="358" cy="142" rx="52" ry="28"/>
+    <circle fill="#FFF8EC" data-region-name="bell_bow_knot" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="145" r="22"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

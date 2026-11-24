@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Candy Canes</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FFE8EC" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#D62828" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#17834A" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <path fill="#F5C451" data-region-name="cane_arc_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 195 235 A 80 80 0 0 1 275 155 L 275 200 A 35 35 0 0 0 240 235 Z"/>
+    <path fill="#FF8A65" data-region-name="cane_arc_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 275 155 A 80 80 0 0 1 355 235 L 310 235 A 35 35 0 0 0 275 200 Z"/>
+    <rect fill="#4FC3F7" data-region-name="cane_hook_tip" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="195" y="235" width="45" height="42" rx="12"/>
+    <rect fill="#BA68C8" data-region-name="cane_stripe_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="310" y="235" width="45" height="42" rx="4"/>
+    <rect fill="#FFF8EC" data-region-name="cane_stripe_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="310" y="277" width="45" height="42" rx="4"/>
+    <rect fill="#8D6E63" data-region-name="cane_stripe_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="310" y="319" width="45" height="42" rx="4"/>
+    <rect fill="#FF5252" data-region-name="cane_stripe_4" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="310" y="361" width="45" height="42" rx="4"/>
+    <rect fill="#66BB6A" data-region-name="cane_stripe_5" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="310" y="403" width="45" height="42" rx="4"/>
+    <rect fill="#D62828" data-region-name="cane_stripe_6" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="310" y="445" width="45" height="42" rx="4"/>
+    <ellipse fill="#17834A" data-region-name="cane_bow_l" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="275" cy="310" rx="52" ry="26"/>
+    <ellipse fill="#F5C451" data-region-name="cane_bow_r" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="390" cy="310" rx="52" ry="26"/>
+    <circle fill="#FF8A65" data-region-name="cane_bow_center" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="332" cy="310" r="20"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

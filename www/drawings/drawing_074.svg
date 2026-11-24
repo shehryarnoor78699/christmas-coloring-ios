@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Ornate Ribbon &amp; Holly Gift Display</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <polygon id="region_2" data-region-id="region_2" data-region-name="bg_left_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" points="75,115 18,220 132,220"/>
+    <polygon id="region_3" data-region-id="region_3" data-region-name="bg_left_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" points="75,190 8,305 142,305"/>
+    <polygon id="region_4" data-region-id="region_4" data-region-name="bg_left_pine_3" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" points="75,275 4,405 148,405"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="bg_right_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" points="535,225 485,310 585,310"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="bg_right_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" points="535,285 475,385 592,385"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_8" data-region-id="region_8" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <polygon id="region_9" data-region-id="region_9" data-region-name="sky_star_l" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" points="155.0,56.0 160.9,69.9 175.9,71.2 164.5,81.1 167.9,95.8 155.0,88.0 142.1,95.8 145.5,81.1 134.1,71.2 149.1,69.9"/>
+    <polygon id="region_10" data-region-id="region_10" data-region-name="sky_star_r" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" points="465.0,60.0 470.9,73.9 485.9,75.2 474.5,85.1 477.9,99.8 465.0,92.0 452.1,99.8 455.5,85.1 444.1,75.2 459.1,73.9"/>
+    <rect id="region_11" data-region-id="region_11" data-region-name="big_gift_box" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="145" y="235" width="225" height="225" rx="12"/>
+    <rect id="region_12" data-region-id="region_12" data-region-name="big_gift_lid" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="132" y="198" width="250" height="44" rx="10"/>
+    <rect id="region_13" data-region-id="region_13" data-region-name="big_gift_v_ribbon" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="240" y="198" width="36" height="262"/>
+    <rect id="region_14" data-region-id="region_14" data-region-name="big_gift_h_ribbon" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="145" y="325" width="225" height="34"/>
+    <ellipse id="region_15" data-region-id="region_15" data-region-name="big_bow_left" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" cx="215" cy="175" rx="44" ry="24"/>
+    <ellipse id="region_16" data-region-id="region_16" data-region-name="big_bow_right" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="175" rx="44" ry="24"/>
+    <circle id="region_17" data-region-id="region_17" data-region-name="big_bow_knot" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" cx="258" cy="182" r="18"/>
+    <rect id="region_18" data-region-id="region_18" data-region-name="small_gift_box" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="315" y="335" width="155" height="150" rx="10"/>
+    <rect id="region_19" data-region-id="region_19" data-region-name="small_gift_lid" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="305" y="308" width="175" height="32" rx="8"/>
+    <rect id="region_20" data-region-id="region_20" data-region-name="small_gift_v_ribbon" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="380" y="308" width="26" height="177"/>
+    <rect id="region_21" data-region-id="region_21" data-region-name="small_gift_h_ribbon" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="315" y="398" width="155" height="26"/>
+    <ellipse id="region_22" data-region-id="region_22" data-region-name="small_bow_left" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" cx="362" cy="292" rx="32" ry="18"/>
+    <ellipse id="region_23" data-region-id="region_23" data-region-name="small_bow_right" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" cx="422" cy="292" rx="32" ry="18"/>
+    <circle id="region_24" data-region-id="region_24" data-region-name="small_bow_knot" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" cx="392" cy="296" r="14"/>
+    <rect id="region_25" data-region-id="region_25" data-region-name="fg_gift_l" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="52" y="485" width="48" height="44" rx="6"/>
+    <rect id="region_26" data-region-id="region_26" data-region-name="fg_gift_r" fill="#FFFFFF" stroke="#111111" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" x="500" y="485" width="48" height="44" rx="6"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Cookies</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FFF8E1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#FF5252" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#66BB6A" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle fill="#D62828" data-region-name="platter_rim" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="300" r="185"/>
+    <circle fill="#17834A" data-region-name="platter_inner" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="300" r="152"/>
+    <polygon fill="#F5C451" data-region-name="cookie_star" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="300.0,173.0 316.5,212.3 359.0,215.8 326.6,243.7 336.4,285.2 300.0,263.0 263.6,285.2 273.4,243.7 241.0,215.8 283.5,212.3"/>
+    <circle fill="#FF8A65" data-region-name="cookie_star_dot" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="235" r="18"/>
+    <circle fill="#4FC3F7" data-region-name="cookie_round" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="235" cy="352" r="52"/>
+    <path fill="#BA68C8" data-region-name="cookie_heart" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 235 364.6 C 215.2 350.2, 215.2 332.2, 235 344.8 C 254.8 332.2, 254.8 350.2, 235 364.6 Z"/>
+    <polygon fill="#FFF8EC" data-region-name="cookie_tree" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="365,295 318,395 412,395"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Winter Animals</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#E0F7FA" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#4FC3F7" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#BA68C8" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <ellipse fill="#FFF8EC" data-region-name="penguin_foot_l" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="248" cy="475" rx="36" ry="18"/>
+    <ellipse fill="#8D6E63" data-region-name="penguin_foot_r" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="352" cy="475" rx="36" ry="18"/>
+    <ellipse fill="#FF5252" data-region-name="penguin_wing_l" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="192" cy="325" rx="24" ry="68"/>
+    <ellipse fill="#66BB6A" data-region-name="penguin_wing_r" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="408" cy="325" rx="24" ry="68"/>
+    <ellipse fill="#D62828" data-region-name="penguin_body" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="320" rx="105" ry="145"/>
+    <ellipse fill="#17834A" data-region-name="penguin_belly" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="340" rx="74" ry="112"/>
+    <rect fill="#F5C451" data-region-name="penguin_scarf" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="214" y="228" width="172" height="30" rx="14"/>
+    <rect fill="#FF8A65" data-region-name="penguin_scarf_tail" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="322" y="248" width="34" height="72" rx="10"/>
+    <path fill="#4FC3F7" data-region-name="penguin_hat" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 225 165 Q 300 80 375 165 Z"/>
+    <rect fill="#BA68C8" data-region-name="penguin_hat_brim" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="218" y="152" width="164" height="24" rx="12"/>
+    <circle fill="#FFF8EC" data-region-name="penguin_hat_pom" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="88" r="20"/>
+    <polygon fill="#8D6E63" data-region-name="penguin_beak" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="276,198 324,198 300,226"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+    <circle cx="266" cy="184" r="8" fill="#111111" pointer-events="none"/>
+    <circle cx="263.6" cy="181.6" r="2.6" fill="#FFFFFF" pointer-events="none"/>
+    <circle cx="334" cy="184" r="8" fill="#111111" pointer-events="none"/>
+    <circle cx="331.6" cy="181.6" r="2.6" fill="#FFFFFF" pointer-events="none"/>
+  </g>
+</svg>

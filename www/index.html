@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Christmas Coloring Studio Pro" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Christmas Coloring Studio Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <!-- Festive Snowfall decorative canvas -->
+    <canvas id="snow-canvas" aria-hidden="true"></canvas>
+
+    <!-- Main dynamic viewport -->
+    <div id="screen-container"></div>
+
+    <!-- Bottom Navigation Bar (100% Ad-Free iOS Pro Layout) -->
+    <nav id="bottom-nav" class="bottom-nav hidden" aria-label="Main Navigation">
+      <button class="nav-btn active" data-nav="home" onclick="App.navigate('home')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-btn" data-nav="categories" onclick="App.navigate('categories')">
+        <span class="nav-icon">🎄</span>
+        <span class="nav-label">Categories</span>
+      </button>
+      <button class="nav-btn" data-nav="levels" onclick="App.navigate('levels')">
+        <span class="nav-icon">🎨</span>
+        <span class="nav-label">Color</span>
+      </button>
+      <button class="nav-btn" data-nav="studio_hub" onclick="App.navigate('studio_hub')">
+        <span class="nav-icon">✨</span>
+        <span class="nav-label">Pro Studio</span>
+      </button>
+      <button class="nav-btn" data-nav="settings" onclick="App.navigate('settings')">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">Settings</span>
+      </button>
+    </nav>
+
+    <!-- Modal Overlay Container (Color Picker, Patterns, Stickers, Parent Gate, Confirmations) -->
+    <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  </div>
+
+  <!-- Hidden high-res export & PDF rendering work area -->
+  <div id="print-render-frame" aria-hidden="true"></div>
+
+  <script src="ultra-hd-art.js"></script>
+  <script src="catalog-data.js"></script>
+  <script src="audio-engine.js"></script>
+  <script src="pdf-engine.js"></script>
+  <script src="coloring-engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

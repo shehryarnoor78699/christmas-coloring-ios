@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Patterns</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FCE4EC" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#17834A" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#F5C451" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <circle fill="#FF8A65" data-region-name="mandala_outer" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="178"/>
+    <circle fill="#4FC3F7" data-region-name="mandala_ring" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="138"/>
+    <circle fill="#BA68C8" data-region-name="mandala_gem_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="412.0" cy="295.0" r="28"/>
+    <circle fill="#FFF8EC" data-region-name="mandala_gem_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="379.2" cy="374.2" r="28"/>
+    <circle fill="#8D6E63" data-region-name="mandala_gem_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="407.0" r="28"/>
+    <circle fill="#FF5252" data-region-name="mandala_gem_4" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="220.8" cy="374.2" r="28"/>
+    <circle fill="#66BB6A" data-region-name="mandala_gem_5" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="188.0" cy="295.0" r="28"/>
+    <circle fill="#D62828" data-region-name="mandala_gem_6" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="220.8" cy="215.8" r="28"/>
+    <circle fill="#17834A" data-region-name="mandala_gem_7" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300.0" cy="183.0" r="28"/>
+    <circle fill="#F5C451" data-region-name="mandala_gem_8" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="379.2" cy="215.8" r="28"/>
+    <polygon fill="#FF8A65" data-region-name="mandala_star" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="300.0,197.0 317.6,252.5 369.3,225.7 342.5,277.4 398.0,295.0 342.5,312.6 369.3,364.3 317.6,337.5 300.0,393.0 282.4,337.5 230.7,364.3 257.5,312.6 202.0,295.0 257.5,277.4 230.7,225.7 282.4,252.5"/>
+    <circle fill="#4FC3F7" data-region-name="mandala_core" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="300" cy="295" r="38"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Christmas Stockings</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FFE0E6" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#17834A" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#F5C451" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <path fill="#FF8A65" data-region-name="stocking_main" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 240 175 L 360 175 L 360 385 Q 360 465 285 465 L 185 465 Q 135 465 135 412 Q 135 362 190 362 L 240 362 Z"/>
+    <path fill="#4FC3F7" data-region-name="stocking_heel" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 312 395 L 360 395 Q 360 465 295 465 Z"/>
+    <path fill="#BA68C8" data-region-name="stocking_toe" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 185 362 L 185 465 Q 135 465 135 412 Q 135 362 185 362 Z"/>
+    <rect fill="#FFF8EC" data-region-name="stocking_fluffy_cuff" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="226" y="132" width="148" height="54" rx="22"/>
+    <polygon fill="#8D6E63" data-region-name="stocking_star" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" points="300.0,248.0 308.2,268.7 330.4,270.1 313.3,284.3 318.8,305.9 300.0,294.0 281.2,305.9 286.7,284.3 269.6,270.1 291.8,268.7"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

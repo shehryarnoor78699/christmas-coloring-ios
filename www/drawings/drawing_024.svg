@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Woodland Animals Tree</title>
+  <g id="coloring-regions">
+    <rect id="region_1" data-region-id="region_1" data-region-name="sky_background" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <polygon id="region_2" data-region-id="region_2" data-region-name="bg_left_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,115 18,220 132,220"/>
+    <polygon id="region_3" data-region-id="region_3" data-region-name="bg_left_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,190 8,305 142,305"/>
+    <polygon id="region_4" data-region-id="region_4" data-region-name="bg_left_pine_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="75,275 4,405 148,405"/>
+    <polygon id="region_5" data-region-id="region_5" data-region-name="bg_right_pine_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,225 485,310 585,310"/>
+    <polygon id="region_6" data-region-id="region_6" data-region-name="bg_right_pine_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="535,285 475,385 592,385"/>
+    <path id="region_7" data-region-id="region_7" data-region-name="snow_ground_back" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path id="region_8" data-region-id="region_8" data-region-name="snow_ground_front" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <rect id="region_9" data-region-id="region_9" data-region-name="tree_trunk" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="274" y="435" width="52" height="62" rx="8"/>
+    <rect id="region_10" data-region-id="region_10" data-region-name="tree_gift_left" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="212" y="452" width="62" height="54" rx="6"/>
+    <rect id="region_11" data-region-id="region_11" data-region-name="tree_gift_right" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="326" y="452" width="62" height="54" rx="6"/>
+    <path id="region_12" data-region-id="region_12" data-region-name="tree_tier_bottom" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 300 255 L 145 425 Q 195 455 248 425 Q 300 458 352 425 Q 405 455 455 425 Z"/>
+    <path id="region_13" data-region-id="region_13" data-region-name="tree_tier_middle" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 300 175 L 178 325 Q 220 352 262 325 Q 300 352 338 325 Q 380 352 422 325 Z"/>
+    <path id="region_14" data-region-id="region_14" data-region-name="tree_tier_top" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" d="M 300 105 L 212 228 Q 255 252 300 228 Q 345 252 388 228 Z"/>
+    <polygon id="region_15" data-region-id="region_15" data-region-name="tree_star_topper" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" points="300.0,52.0 309.4,75.1 334.2,76.9 315.2,92.9 321.2,117.1 300.0,104.0 278.8,117.1 284.8,92.9 265.8,76.9 290.6,75.1"/>
+    <circle id="region_16" data-region-id="region_16" data-region-name="tree_bauble_1" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="268" cy="185" r="15"/>
+    <circle id="region_17" data-region-id="region_17" data-region-name="tree_bauble_2" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="336" cy="195" r="15"/>
+    <circle id="region_18" data-region-id="region_18" data-region-name="tree_bauble_3" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="242" cy="285" r="15"/>
+    <circle id="region_19" data-region-id="region_19" data-region-name="tree_bauble_4" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="312" cy="275" r="15"/>
+    <circle id="region_20" data-region-id="region_20" data-region-name="tree_bauble_5" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="365" cy="295" r="15"/>
+    <circle id="region_21" data-region-id="region_21" data-region-name="tree_bauble_6" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="215" cy="385" r="15"/>
+    <circle id="region_22" data-region-id="region_22" data-region-name="tree_bauble_7" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="285" cy="378" r="15"/>
+    <circle id="region_23" data-region-id="region_23" data-region-name="tree_bauble_8" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" cx="372" cy="390" r="15"/>
+    <rect id="region_24" data-region-id="region_24" data-region-name="fg_gift_l" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="52" y="485" width="48" height="44" rx="6"/>
+    <rect id="region_25" data-region-id="region_25" data-region-name="fg_gift_r" fill="#FFFFFF" stroke="#111111" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" x="500" y="485" width="48" height="44" rx="6"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+  </g>
+</svg>

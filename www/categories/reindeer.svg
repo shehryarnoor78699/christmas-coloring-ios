@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <title>Reindeer</title>
+  <g id="coloring-regions">
+    <rect id="region_1" fill="#FBEAD6" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="4" y="4" width="592" height="592" rx="16"/>
+    <path fill="#FFF8EC" data-region-name="snow_ground_back" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 445 Q 95 410 190 445 Q 300 415 415 445 Q 510 415 596 445 L 596 596 L 4 596 Z"/>
+    <path fill="#8D6E63" data-region-name="snow_ground_front" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 4 505 Q 150 470 300 505 Q 450 470 596 505 L 596 596 L 4 596 Z"/>
+    <path fill="#FF5252" data-region-name="antler_left" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 258 145 C 235 105, 202 95, 208 68 C 225 65, 235 92, 245 98 C 248 72, 265 68, 268 95 L 270 145 Z"/>
+    <path fill="#66BB6A" data-region-name="antler_right" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 322 145 C 345 105, 378 95, 372 68 C 355 65, 345 92, 335 98 C 332 72, 315 68, 312 95 L 310 145 Z"/>
+    <ellipse fill="#D62828" data-region-name="ear_left" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="222" cy="158" rx="26" ry="15"/>
+    <ellipse fill="#17834A" data-region-name="ear_right" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="358" cy="158" rx="26" ry="15"/>
+    <ellipse fill="#F5C451" data-region-name="reindeer_body" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="318" cy="355" rx="82" ry="54"/>
+    <circle fill="#FF8A65" data-region-name="reindeer_tail" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="398" cy="330" r="16"/>
+    <rect fill="#4FC3F7" data-region-name="reindeer_leg_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="250" y="392" width="24" height="88" rx="10"/>
+    <rect fill="#BA68C8" data-region-name="reindeer_hoof_1" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="249" y="462" width="26" height="20" rx="6"/>
+    <rect fill="#FFF8EC" data-region-name="reindeer_leg_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="282" y="392" width="24" height="88" rx="10"/>
+    <rect fill="#8D6E63" data-region-name="reindeer_hoof_2" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="281" y="462" width="26" height="20" rx="6"/>
+    <rect fill="#FF5252" data-region-name="reindeer_leg_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="330" y="392" width="24" height="88" rx="10"/>
+    <rect fill="#66BB6A" data-region-name="reindeer_hoof_3" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="329" y="462" width="26" height="20" rx="6"/>
+    <rect fill="#D62828" data-region-name="reindeer_leg_4" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="360" y="392" width="24" height="88" rx="10"/>
+    <rect fill="#17834A" data-region-name="reindeer_hoof_4" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="359" y="462" width="26" height="20" rx="6"/>
+    <path fill="#F5C451" data-region-name="reindeer_neck" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M 255 245 L 318 245 L 328 335 L 248 335 Z"/>
+    <rect fill="#FF8A65" data-region-name="reindeer_collar" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="248" y="278" width="76" height="22" rx="10"/>
+    <circle fill="#4FC3F7" data-region-name="reindeer_bell" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="286" cy="304" r="15"/>
+    <circle fill="#BA68C8" data-region-name="reindeer_head" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="290" cy="195" r="58"/>
+    <ellipse fill="#FFF8EC" data-region-name="reindeer_snout" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="290" cy="218" rx="38" ry="26"/>
+    <ellipse fill="#8D6E63" data-region-name="reindeer_nose" stroke="#111111" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="290" cy="206" rx="16" ry="12"/>
+  </g>
+  <g id="line-art-details" pointer-events="none">
+    <circle cx="266" cy="178" r="7" fill="#111111" pointer-events="none"/>
+    <circle cx="263.9" cy="175.9" r="2.2" fill="#FFFFFF" pointer-events="none"/>
+    <circle cx="314" cy="178" r="7" fill="#111111" pointer-events="none"/>
+    <circle cx="311.9" cy="175.9" r="2.2" fill="#FFFFFF" pointer-events="none"/>
+    <path d="M 279.0 226 Q 290 235 301.0 226" fill="none" stroke="#111111" stroke-width="5.5" stroke-linecap="round" pointer-events="none"/>
+  </g>
+</svg>
