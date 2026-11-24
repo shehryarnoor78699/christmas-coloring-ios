@@ -8,8 +8,8 @@ on:
 
 jobs:
   build-and-publish-ios:
-    name: Build, Sign & Upload iOS IPA on macOS-14
-    runs-on: macos-14
+    name: Build, Sign & Upload iOS IPA on Cloud Mac
+    runs-on: macos-latest
 
     steps:
       - name: 1. Checkout Repository
