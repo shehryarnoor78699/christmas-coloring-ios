@@ -1,0 +1,94 @@
+workflows:
+  ios-appstore-release:
+    name: Christmas Coloring Studio Pro — iOS App Store Release
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      node: 20
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: 1. Install Dependencies & Sync Capacitor iOS
+        script: |
+          npm install
+          npx cap sync ios
+
+      - name: 2. Install Apple Distribution Certificate & Provisioning Profile
+        script: |
+          CERTIFICATE_PATH=$CM_BUILD_DIR/build_certificate.p12
+          MAC_P12_PATH=$CM_BUILD_DIR/mac_compat.p12
+          EXTRACTED_PEM=$CM_BUILD_DIR/extracted.pem
+          PP_PATH=$CM_BUILD_DIR/build_pp.mobileprovision
+          KEYCHAIN_PATH=$HOME/Library/Keychains/app-signing.keychain-db
+          KEYCHAIN_PASSWORD="TemporaryKeychainPass123!"
+
+          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode -o "$CERTIFICATE_PATH"
+          echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 --decode -o "$PP_PATH"
+
+          openssl pkcs12 -in "$CERTIFICATE_PATH" -passin "pass:$P12_PASSWORD" -nodes -out "$EXTRACTED_PEM"
+          /usr/bin/openssl pkcs12 -export -in "$EXTRACTED_PEM" -out "$MAC_P12_PATH" -passout "pass:$P12_PASSWORD"
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH" || true
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+
+          security import "$MAC_P12_PATH" -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security list-keychain -d user -s "$KEYCHAIN_PATH" login.keychain-db
+
+          UUID=$(/usr/libexec/PlistBuddy -c "Print UUID" /dev/stdin <<< $(/usr/bin/security cms -D -i "$PP_PATH"))
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp "$PP_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/"$UUID".mobileprovision
+
+      - name: 3. Archive & Export Signed App Store IPA
+        script: |
+          cat <<EOF > $CM_BUILD_DIR/ExportOptions.plist
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>method</key>
+              <string>app-store-connect</string>
+              <key>teamID</key>
+              <string>RR89GK8L2G</string>
+              <key>uploadSymbols</key>
+              <true/>
+              <key>signingStyle</key>
+              <string>manual</string>
+              <key>signingCertificate</key>
+              <string>Apple Distribution</string>
+              <key>provisioningProfiles</key>
+              <dict>
+                  <key>com.shehryarnoor.christmascoloring.ios</key>
+                  <string>ChristmasColoringStudioPro_AppStore</string>
+              </dict>
+          </dict>
+          </plist>
+          EOF
+
+          cd ios/App
+          xcodebuild clean archive \
+            -workspace App.xcworkspace \
+            -scheme App \
+            -configuration Release \
+            -sdk iphoneos \
+            -archivePath $CM_BUILD_DIR/App.xcarchive
+
+          mkdir -p $CM_BUILD_DIR/export
+          xcodebuild -exportArchive \
+            -archivePath $CM_BUILD_DIR/App.xcarchive \
+            -exportOptionsPlist $CM_BUILD_DIR/ExportOptions.plist \
+            -exportPath $CM_BUILD_DIR/export
+
+      - name: 4. Upload Signed IPA Directly to Apple App Store Connect
+        script: |
+          mkdir -p ~/.appstoreconnect/private_keys
+          echo "$APPSTORE_API_PRIVATE_KEY" > ~/.appstoreconnect/private_keys/AuthKey_${APPSTORE_API_KEY_ID}.p8
+          IPA_FILE=$(ls $CM_BUILD_DIR/export/*.ipa | head -n 1)
+          xcrun altool --upload-app \
+            --type ios \
+            --file "$IPA_FILE" \
+            --apiKey "$APPSTORE_API_KEY_ID" \
+            --apiIssuer "$APPSTORE_ISSUER_ID"
+    artifacts:
+      - export/*.ipa

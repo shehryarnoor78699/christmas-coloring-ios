@@ -4,3 +4,4 @@ APP_STORE_CONNECT_ASSETS/
 *.ipa
 *.xcarchive
 .DS_Store
+tools/ 
