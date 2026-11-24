@@ -26,7 +26,11 @@ workflows:
           KEYCHAIN_PASSWORD="TemporaryKeychainPass123!"
 
           printf "%s" "$BUILD_CERTIFICATE_BASE64" | tr -d ' \n\r\t' | base64 --decode > "$CERTIFICATE_PATH"
-          printf "%s" "$BUILD_PROVISION_PROFILE_BASE64" | tr -d ' \n\r\t' | base64 --decode > "$PP_PATH"
+          if [ -f "$CM_BUILD_DIR/ios/App/ChristmasColoringStudioPro_AppStore.mobileprovision" ]; then
+            cp "$CM_BUILD_DIR/ios/App/ChristmasColoringStudioPro_AppStore.mobileprovision" "$PP_PATH"
+          else
+            printf "%s" "$BUILD_PROVISION_PROFILE_BASE64" | tr -d ' \n\r\t' | base64 --decode > "$PP_PATH"
+          fi
 
           ls -lh "$CERTIFICATE_PATH" "$PP_PATH"
 
@@ -43,9 +47,11 @@ workflows:
           security find-identity -v -p codesigning "$KEYCHAIN_PATH"
 
           UUID="5ca6ead5-7ca9-4a23-8b36-9846dad8eaec"
-          echo "Installing Provisioning Profile UUID: $UUID"
+          echo "Installing Provisioning Profile UUID: $UUID into both legacy and Xcode 16+ directories"
           mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles"
           cp "$PP_PATH" "$HOME/Library/MobileDevice/Provisioning Profiles/$UUID.mobileprovision"
+          cp "$PP_PATH" "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles/$UUID.mobileprovision"
 
       - name: 3. Archive & Export Signed App Store IPA
         script: |
@@ -68,7 +74,7 @@ workflows:
               <key>provisioningProfiles</key>
               <dict>
                   <key>com.shehryarnoor.christmascoloring.ios</key>
-                  <string>ChristmasColoringStudioPro_AppStore</string>
+                  <string>5ca6ead5-7ca9-4a23-8b36-9846dad8eaec</string>
               </dict>
           </dict>
           </plist>
