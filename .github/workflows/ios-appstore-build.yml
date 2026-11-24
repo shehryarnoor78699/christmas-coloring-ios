@@ -33,19 +33,26 @@ jobs:
           KEYCHAIN_PASSWORD: "TemporaryKeychainPass123!"
         run: |
           CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
+          MAC_P12_PATH=$RUNNER_TEMP/mac_compat.p12
+          EXTRACTED_PEM=$RUNNER_TEMP/extracted.pem
           PP_PATH=$RUNNER_TEMP/build_pp.mobileprovision
           KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
 
           echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode -o "$CERTIFICATE_PATH"
           echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 --decode -o "$PP_PATH"
 
+          # Convert OpenSSL 3 PKCS12 via Apple LibreSSL (/usr/bin/openssl) so macOS Keychain imports cleanly
+          openssl pkcs12 -in "$CERTIFICATE_PATH" -passin "pass:$P12_PASSWORD" -nodes -out "$EXTRACTED_PEM"
+          /usr/bin/openssl pkcs12 -export -in "$EXTRACTED_PEM" -out "$MAC_P12_PATH" -passout "pass:$P12_PASSWORD"
+
           security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
           security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
           security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
 
-          security import "$CERTIFICATE_PATH" -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+          security import "$MAC_P12_PATH" -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
           security list-keychain -d user -s "$KEYCHAIN_PATH" login.keychain-db
+          security find-identity -v -p codesigning "$KEYCHAIN_PATH"
 
           UUID=$(/usr/libexec/PlistBuddy -c "Print UUID" /dev/stdin <<< $(/usr/bin/security cms -D -i "$PP_PATH"))
           echo "Installing Provisioning Profile UUID: $UUID"
