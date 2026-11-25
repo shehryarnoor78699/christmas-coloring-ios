@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Wood Shrinkage Calculator Plus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <header class="lab-header">
+      <div>
+        <h1>🔬 Wood Shrinkage &amp; EMC Lab</h1>
+        <p>USDA FPL Tangential/Radial Movement &amp; Joinery Clearance</p>
+      </div>
+      <span class="lab-badge">USDA FPL</span>
+    </header>
+
+    <div class="lab-tabs">
+      <button class="ltab active" data-t="move" onclick="ShrinkApp.setTab('move')">1. Seasonal Movement</button>
+      <button class="ltab" data-t="clearance" onclick="ShrinkApp.setTab('clearance')">2. Panel Groove Clearance</button>
+      <button class="ltab" data-t="emc" onclick="ShrinkApp.setTab('emc')">3. Psychrometric EMC</button>
+    </div>
+
+    <main id="lab-main" class="lab-main"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Gravel Calculator: StonePlus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <header class="quarry-hdr">
+      <div>
+        <h1>🪨 Gravel &amp; Fleet Dispatch Pro</h1>
+        <p>Compacted Sub-Base Tonnage &amp; Dump-Truck Load Planner</p>
+      </div>
+      <span class="quarry-badge">STONEPLUS</span>
+    </header>
+    <div class="quarry-tabs">
+      <button class="qtab active" data-t="tonnage" onclick="GravelApp.setTab('tonnage')">1. Aggregate Tonnage</button>
+      <button class="qtab" data-t="fleet" onclick="GravelApp.setTab('fleet')">2. Truck Deliveries</button>
+      <button class="qtab" data-t="drain" onclick="GravelApp.setTab('drain')">3. French Drain Trench</button>
+    </div>
+    <main id="quarry-main" class="quarry-main"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

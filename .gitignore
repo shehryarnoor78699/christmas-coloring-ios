@@ -1,0 +1,4 @@
+apps/*/screenshots_iphone/
+apps/*/screenshots_ipad/
+apps/*/*.mp4
+node_modules/

@@ -1,0 +1,10 @@
+{
+  "appId": "com.bcalculator.app",
+  "appName": "Breastfeeding Calorie Count",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#FFF5F8",
+    "preferredContentMode": "mobile"
+  }
+}

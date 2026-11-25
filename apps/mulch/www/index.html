@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Mulch Calculator: GardenPlus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <header class="mulch-hdr">
+      <div>
+        <h1>🍂 Mulch &amp; Landscape Care Pro</h1>
+        <p>Bed Coverage, Settling Top-Up &amp; Seasonal Care Planner</p>
+      </div>
+      <span class="mulch-badge">GARDENPLUS</span>
+    </header>
+    <div class="mulch-tabs">
+      <button class="mtab active" data-t="cov" onclick="MulchApp.setTab('cov')">1. Coverage &amp; Bulk vs Bags</button>
+      <button class="mtab" data-t="care" onclick="MulchApp.setTab('care')">2. Seasonal Top-Up Care Plan</button>
+      <button class="mtab" data-t="edge" onclick="MulchApp.setTab('edge')">3. Fabric &amp; Edging</button>
+    </div>
+    <main id="mulch-main" class="mulch-main"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

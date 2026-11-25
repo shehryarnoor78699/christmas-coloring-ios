@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Board Foot Calculator: CutPlus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <header class="top-header">
+      <div>
+        <h1>🪵 Board Foot &amp; CutList CAD</h1>
+        <p>NHLA Hardwood Volume, Kerf Optimizer &amp; Millwork Studio</p>
+      </div>
+      <span class="badge-pill">NHLA PRO</span>
+    </header>
+
+    <div class="nav-strip">
+      <button class="tab-pill active" data-tab="bf" onclick="CutPlusApp.setTab('bf')">1. Board Foot &amp; Cost</button>
+      <button class="tab-pill" data-tab="cutlist" onclick="CutPlusApp.setTab('cutlist')">2. Kerf Cut Optimizer</button>
+      <button class="tab-pill" data-tab="species" onclick="CutPlusApp.setTab('species')">3. Hardwood Species DB</button>
+      <button class="tab-pill" data-tab="saved" onclick="CutPlusApp.setTab('saved')">4. Millwork Batches</button>
+    </div>
+
+    <main id="main-view" class="main-view"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

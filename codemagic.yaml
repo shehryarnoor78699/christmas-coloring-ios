@@ -1,0 +1,98 @@
+workflows:
+  ios-appstore-release:
+    name: 5 Plus Calculator Pro Studios — Unified iOS App Store Release (Build 10)
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      groups:
+        - appstore_credentials
+      node: 20
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: 1. Install Dependencies & Sync Base Capacitor iOS Project
+        script: |
+          npm install
+          npx cap sync ios
+
+      - name: 2. Install Apple Distribution Certificate & All 5 Provisioning Profiles
+        script: |
+          set -e
+          CERTIFICATE_PATH=$CM_BUILD_DIR/build_certificate.p12
+          MAC_P12_PATH=$CM_BUILD_DIR/mac_compat.p12
+          EXTRACTED_PEM=$CM_BUILD_DIR/extracted.pem
+          KEYCHAIN_PATH=$HOME/Library/Keychains/app-signing.keychain-db
+          KEYCHAIN_PASSWORD="TemporaryKeychainPass123!"
+
+          printf "%s" "$BUILD_CERTIFICATE_BASE64" | tr -d ' \n\r\t' | base64 --decode > "$CERTIFICATE_PATH"
+          openssl pkcs12 -in "$CERTIFICATE_PATH" -passin "pass:$P12_PASSWORD" -nodes -out "$EXTRACTED_PEM"
+          /usr/bin/openssl pkcs12 -export -in "$EXTRACTED_PEM" -out "$MAC_P12_PATH" -passout "pass:$P12_PASSWORD"
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH" || true
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+
+          security import "$MAC_P12_PATH" -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security list-keychain -d user -s "$KEYCHAIN_PATH" login.keychain-db
+          security find-identity -v -p codesigning "$KEYCHAIN_PATH"
+
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles"
+
+          install_pp() {
+            local file="$1"
+            local uuid="$2"
+            cp "$CM_BUILD_DIR/profiles/$file" "$HOME/Library/MobileDevice/Provisioning Profiles/$uuid.mobileprovision"
+            cp "$CM_BUILD_DIR/profiles/$file" "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles/$uuid.mobileprovision"
+            echo "Installed $file -> $uuid"
+          }
+
+          install_pp "BoardFootCutPlus_AppStore.mobileprovision" "5eff8ac1-49b6-4b7d-a3b6-598d53ee7697"
+          install_pp "WoodShrinkagePlus_AppStore.mobileprovision" "a8445c1f-6f13-4d21-8db4-448441b2325b"
+          install_pp "SoilBedPlus_AppStore.mobileprovision" "9fbaa117-aa79-4fda-a6d5-b6f3da671320"
+          install_pp "GravelStonePlus_AppStore.mobileprovision" "a1b5c284-4bb5-495c-9440-a6ecf53b73a8"
+          install_pp "MulchGardenPlus_AppStore.mobileprovision" "55f50325-0024-48d7-bf0f-1e5f18217284"
+
+      - name: 3. Archive, Sign, Export & Upload All 5 Plus Studio IPAs (Version 1.0.0 Build 10)
+        script: |
+          set -e
+          mkdir -p ~/.appstoreconnect/private_keys
+          printf "%s\n" "$APPSTORE_API_PRIVATE_KEY" > ~/.appstoreconnect/private_keys/AuthKey_${APPSTORE_API_KEY_ID}.p8
+          mkdir -p $CM_BUILD_DIR/all_ipas
+
+          for SLUG in boardfoot shrinkage soil gravel mulch; do
+            echo "=================================================================="
+            echo "BUILDING & UPLOADING STUDIO: $SLUG (Version 1.0.0 Build 10)"
+            echo "=================================================================="
+            cd $CM_BUILD_DIR
+            python3 configure_app.py "$SLUG"
+
+            cd $CM_BUILD_DIR/ios/App
+            rm -rf "$CM_BUILD_DIR/build_${SLUG}.xcarchive" "$CM_BUILD_DIR/export_${SLUG}"
+            xcodebuild clean archive \
+              -workspace App.xcworkspace \
+              -scheme App \
+              -configuration Release \
+              -sdk iphoneos \
+              -archivePath "$CM_BUILD_DIR/build_${SLUG}.xcarchive"
+
+            mkdir -p "$CM_BUILD_DIR/export_${SLUG}"
+            xcodebuild -exportArchive \
+              -archivePath "$CM_BUILD_DIR/build_${SLUG}.xcarchive" \
+              -exportOptionsPlist "$CM_BUILD_DIR/ExportOptions.plist" \
+              -exportPath "$CM_BUILD_DIR/export_${SLUG}"
+
+            IPA_FILE=$(ls "$CM_BUILD_DIR/export_${SLUG}"/*.ipa | head -n 1)
+            cp "$IPA_FILE" "$CM_BUILD_DIR/all_ipas/${SLUG}_Build10.ipa"
+
+            echo "Uploading $IPA_FILE for $SLUG to Apple App Store Connect..."
+            xcrun altool --upload-app \
+              --type ios \
+              --file "$IPA_FILE" \
+              --apiKey "$APPSTORE_API_KEY_ID" \
+              --apiIssuer "$APPSTORE_ISSUER_ID"
+            echo "Successfully uploaded $SLUG (Build 10)!"
+          done
+    artifacts:
+      - all_ipas/*.ipa

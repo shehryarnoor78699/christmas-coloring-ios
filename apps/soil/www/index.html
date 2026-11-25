@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Soil Calculator: BedPlus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <header class="soil-hdr">
+      <div>
+        <h1>🌱 Soil &amp; Raised Bed Studio</h1>
+        <p>Horizon Blend, Compost Top-Up &amp; Bag Optimizer</p>
+      </div>
+      <span class="soil-badge">BEDPLUS</span>
+    </header>
+    <div class="soil-tabs">
+      <button class="stab active" data-t="bed" onclick="SoilApp.setTab('bed')">1. Bed Volume &amp; Bags</button>
+      <button class="stab" data-t="blend" onclick="SoilApp.setTab('blend')">2. Horizon Soil Blender</button>
+      <button class="stab" data-t="npk" onclick="SoilApp.setTab('npk')">3. NPK &amp; pH Amendment</button>
+    </div>
+    <main id="soil-main" class="soil-main"></main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
