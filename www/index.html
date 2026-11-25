@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Breastfeeding Calorie Count" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Breastfeeding Calorie Count</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <!-- Top Dynamic Navigation Header (Website Pink-to-Purple Gradient) -->
+    <header id="app-header" class="app-header"></header>
+
+    <!-- Main Scrollable Viewport -->
+    <main id="screen-container" class="screen-container"></main>
+
+    <!-- 5-Tab Apple HIG Bottom Bar -->
+    <nav id="bottom-nav" class="bottom-nav" aria-label="Main Navigation">
+      <button class="nav-btn active" data-tab="calculator" onclick="LactationApp.switchTab('calculator')">
+        <span class="nav-icon">🌸</span>
+        <span class="nav-label">Calculator</span>
+      </button>
+      <button class="nav-btn" data-tab="charts" onclick="LactationApp.switchTab('charts')">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">Energy Chart</span>
+      </button>
+      <button class="nav-btn" data-tab="meals" onclick="LactationApp.switchTab('meals')">
+        <span class="nav-icon">🥗</span>
+        <span class="nav-label">Meal Studio</span>
+      </button>
+      <button class="nav-btn" data-tab="tracker" onclick="LactationApp.switchTab('tracker')">
+        <span class="nav-icon">💧</span>
+        <span class="nav-label">Daily Log</span>
+      </button>
+      <button class="nav-btn" data-tab="guide" onclick="LactationApp.switchTab('guide')">
+        <span class="nav-icon">📖</span>
+        <span class="nav-label">Guide &amp; Info</span>
+      </button>
+    </nav>
+
+    <!-- Modal Container -->
+    <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="lactation-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

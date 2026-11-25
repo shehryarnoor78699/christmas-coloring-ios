@@ -1,0 +1,6 @@
+node_modules/
+APP_STORE_SCREENSHOTS/
+*.ipa
+*.xcarchive
+*.py
+.DS_Store
