@@ -1,0 +1,10 @@
+{
+  "appId": "com.heightcalc.childheightcalculator",
+  "appName": "Height & Growth Predictor Pro",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#0F766E",
+    "preferredContentMode": "mobile"
+  }
+}

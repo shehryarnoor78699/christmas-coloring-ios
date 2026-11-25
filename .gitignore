@@ -1,0 +1,5 @@
+node_modules/
+*.ipa
+*.xcarchive
+*.py
+.DS_Store

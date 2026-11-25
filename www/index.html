@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Height & Growth Predictor Pro" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Height &amp; Growth Predictor Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-shell">
+    <!-- Top Dynamic Navigation Header -->
+    <header id="app-header" class="app-header"></header>
+
+    <!-- Main Scrollable Viewport -->
+    <main id="screen-container" class="screen-container"></main>
+
+    <!-- 5-Tab Apple HIG Bottom Bar -->
+    <nav id="bottom-nav" class="bottom-nav" aria-label="Main Navigation">
+      <button class="nav-btn active" data-tab="calculators" onclick="GrowthApp.switchTab('calculators')">
+        <span class="nav-icon">📏</span>
+        <span class="nav-label">Calculators</span>
+      </button>
+      <button class="nav-btn" data-tab="charts" onclick="GrowthApp.switchTab('charts')">
+        <span class="nav-icon">📈</span>
+        <span class="nav-label">Percentile Chart</span>
+      </button>
+      <button class="nav-btn" data-tab="journal" onclick="GrowthApp.switchTab('journal')">
+        <span class="nav-icon">📓</span>
+        <span class="nav-label">Growth Log</span>
+      </button>
+      <button class="nav-btn" data-tab="wellness" onclick="GrowthApp.switchTab('wellness')">
+        <span class="nav-icon">🧘</span>
+        <span class="nav-label">Posture &amp; Habits</span>
+      </button>
+      <button class="nav-btn" data-tab="settings" onclick="GrowthApp.switchTab('settings')">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">Settings</span>
+      </button>
+    </nav>
+
+    <!-- Modal Container -->
+    <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="growth-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
