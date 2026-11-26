@@ -58,7 +58,7 @@ workflows:
           printf "%s\n" "$APPSTORE_API_PRIVATE_KEY" > ~/.appstoreconnect/private_keys/AuthKey_${APPSTORE_API_KEY_ID}.p8
           mkdir -p $CM_BUILD_DIR/all_ipas
 
-          for SLUG in heatpump snowload offgrid; do
+          for SLUG in snowload offgrid; do
             echo "=================================================================="
             echo "BUILDING & UPLOADING WINTER STUDIO: $SLUG (Version 1.0 Build 1)"
             echo "=================================================================="

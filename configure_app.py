@@ -11,7 +11,7 @@ APPS = {
         "profile_uuid": "d0e9232d-de03-4665-b9e0-b9aee79fe335",
     },
     "snowload": {
-        "display_name": "Snow Load & Ice Dam",
+        "display_name": "Snow Load Roof Pro",
         "bundle_id": "com.shehryarnoor.snowloadroof.ios",
         "prof_name": "SnowLoadRoof_AppStore",
         "profile_uuid": "d43a4a7c-fae0-48d6-8794-0b3a84261c47",
