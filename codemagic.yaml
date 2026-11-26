@@ -1,0 +1,94 @@
+workflows:
+  ios-appstore-release:
+    name: 3 Winter & Energy Pro Studios — Unified iOS App Store Release (Build 1)
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      groups:
+        - appstore_credentials
+      node: 20
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: 1. Install Dependencies & Sync Base Capacitor iOS Project
+        script: |
+          npm install
+          npx cap sync ios
+
+      - name: 2. Install Apple Distribution Certificate & All 3 Winter Provisioning Profiles
+        script: |
+          set -e
+          CERTIFICATE_PATH=$CM_BUILD_DIR/build_certificate.p12
+          MAC_P12_PATH=$CM_BUILD_DIR/mac_compat.p12
+          EXTRACTED_PEM=$CM_BUILD_DIR/extracted.pem
+          KEYCHAIN_PATH=$HOME/Library/Keychains/app-signing.keychain-db
+          KEYCHAIN_PASSWORD="TemporaryKeychainPass123!"
+
+          printf "%s" "$BUILD_CERTIFICATE_BASE64" | tr -d ' \n\r\t' | base64 --decode > "$CERTIFICATE_PATH"
+          openssl pkcs12 -in "$CERTIFICATE_PATH" -passin "pass:$P12_PASSWORD" -nodes -out "$EXTRACTED_PEM"
+          /usr/bin/openssl pkcs12 -export -in "$EXTRACTED_PEM" -out "$MAC_P12_PATH" -passout "pass:$P12_PASSWORD"
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH" || true
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+
+          security import "$MAC_P12_PATH" -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security list-keychain -d user -s "$KEYCHAIN_PATH" login.keychain-db
+
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles"
+
+          install_pp() {
+            local file="$1"
+            local uuid="$2"
+            cp "$CM_BUILD_DIR/profiles/$file" "$HOME/Library/MobileDevice/Provisioning Profiles/$uuid.mobileprovision"
+            cp "$CM_BUILD_DIR/profiles/$file" "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles/$uuid.mobileprovision"
+            echo "Installed $file -> $uuid"
+          }
+
+          install_pp "HeatPumpSizing_AppStore.mobileprovision" "d0e9232d-de03-4665-b9e0-b9aee79fe335"
+          install_pp "SnowLoadRoof_AppStore.mobileprovision" "d43a4a7c-fae0-48d6-8794-0b3a84261c47"
+          install_pp "OffGridBattery_AppStore.mobileprovision" "35e00685-5bea-4ce8-8bf8-1c24b7ce115e"
+
+      - name: 3. Archive, Sign, Export & Upload All 3 Winter Studio IPAs (Version 1.0 Build 1)
+        script: |
+          set -e
+          mkdir -p ~/.appstoreconnect/private_keys
+          printf "%s\n" "$APPSTORE_API_PRIVATE_KEY" > ~/.appstoreconnect/private_keys/AuthKey_${APPSTORE_API_KEY_ID}.p8
+          mkdir -p $CM_BUILD_DIR/all_ipas
+
+          for SLUG in heatpump snowload offgrid; do
+            echo "=================================================================="
+            echo "BUILDING & UPLOADING WINTER STUDIO: $SLUG (Version 1.0 Build 1)"
+            echo "=================================================================="
+            cd $CM_BUILD_DIR
+            python3 configure_app.py "$SLUG"
+
+            cd $CM_BUILD_DIR/ios/App
+            rm -rf "$CM_BUILD_DIR/build_${SLUG}.xcarchive" "$CM_BUILD_DIR/export_${SLUG}"
+            xcodebuild clean archive \
+              -workspace App.xcworkspace \
+              -scheme App \
+              -configuration Release \
+              -sdk iphoneos \
+              -archivePath "$CM_BUILD_DIR/build_${SLUG}.xcarchive"
+
+            mkdir -p "$CM_BUILD_DIR/export_${SLUG}"
+            xcodebuild -exportArchive \
+              -archivePath "$CM_BUILD_DIR/build_${SLUG}.xcarchive" \
+              -exportOptionsPlist "$CM_BUILD_DIR/ExportOptions.plist" \
+              -exportPath "$CM_BUILD_DIR/export_${SLUG}"
+
+            IPA_FILE=$(ls "$CM_BUILD_DIR/export_${SLUG}"/*.ipa | head -n 1)
+            cp "$IPA_FILE" "$CM_BUILD_DIR/all_ipas/${SLUG}_Build1.ipa"
+
+            echo "Uploading $IPA_FILE for $SLUG to Apple App Store Connect..."
+            xcrun altool --upload-app \
+              --type ios \
+              --file "$IPA_FILE" \
+              --apiKey "$APPSTORE_API_KEY_ID" \
+              --apiIssuer "$APPSTORE_ISSUER_ID" || echo "Note: Create App record in ASC first if altool reports no app record yet"
+          done
+    artifacts:
+      - all_ipas/*.ipa

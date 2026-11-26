@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Heat Pump & Mini Split Sizing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Heat Pump & Mini Split Sizing</h1>
+    <p>Winter Manual-J / EN-12831 Heat-Loss & COP Lab (US/UK/EU)</p>
+  </div>
+  <span class="badge">PRO STUDIO</span>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab(0)">1. Thermal Load CAD</button>
+  <button class="tab-btn" onclick="switchTab(1)">2. Winter COP & Payback</button>
+  <button class="tab-btn" onclick="switchTab(2)">3. Multi-Zone Schedule</button>
+</div>
+
+<div class="container">
+  <div class="panel active" id="panel-0">
+    <div class="card">
+      <h2>Interactive Room Thermal Envelope & Heat-Loss Blueprint</h2>
+      <canvas id="heatCanvas" width="680" height="340"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiHeatMain">18,400 BTU/hr (5.39 kW)</div>
+        <div class="kpi-sub" id="kpiHeatSub">Recommended: 18k BTU (1.5 Ton / 5.5 kW) Cold-Climate Mini Split • Delta-T: 55°F (30.5°C)</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Region & Units</label>
+          <select id="regionUnit" onchange="calcHeat()">
+            <option value="US">USA / Canada (ft², BTU/hr, °F)</option>
+            <option value="UK">UK (m², kW & BTU, °C, £ GBP)</option>
+            <option value="EU">Europe (m², kW, °C, € EUR)</option>
+          </select>
+        </div>
+        <div>
+          <label>Winter Outdoor Design Temp</label>
+          <select id="winterTemp" onchange="calcHeat()">
+            <option value="-15">Arctic / Nordic / Canada (-15°F / -26°C)</option>
+            <option value="0">Cold US Midwest / Alps (0°F / -18°C)</option>
+            <option value="15" selected>Moderate Winter US/UK/DE (15°F / -9°C)</option>
+            <option value="28">Mild Winter UK South / Med (28°F / -2°C)</option>
+          </select>
+        </div>
+        <div>
+          <label>Floor Area (ft² or m²)</label>
+          <input type="number" id="floorArea" value="450" oninput="calcHeat()">
+        </div>
+        <div>
+          <label>Ceiling Height (ft or m)</label>
+          <input type="number" id="ceilHeight" value="9" step="0.5" oninput="calcHeat()">
+        </div>
+        <div>
+          <label>Envelope Insulation (U / R-Value)</label>
+          <select id="insulGrade" onchange="calcHeat()">
+            <option value="1.45">Older Uninsulated Brick / Drafty (High Loss)</option>
+            <option value="1.0" selected>Standard Double-Glazed Cavity Wall</option>
+            <option value="0.68">Modern High-R Triple-Glazed / Passive</option>
+          </select>
+        </div>
+        <div>
+          <label>Window Glazing Ratio</label>
+          <select id="glassRatio" onchange="calcHeat()">
+            <option value="0.9">Low Glazing (10% Wall Area)</option>
+            <option value="1.0" selected>Standard Windows (20% Wall Area)</option>
+            <option value="1.25">Large Patio / Conservatory Glass (35%+)</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="saveZone()">+ Add Room Zone to Multi-Split / Heat Pump Schedule</button>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-1">
+    <div class="card">
+      <h2>Sub-Zero Heat Pump COP vs. Gas / Oil / Electric Boiler Lab</h2>
+      <canvas id="copCanvas" width="680" height="320"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiCopMain">Seasonal SCOP: 3.45 • Saves $640 / Winter</div>
+        <div class="kpi-sub" id="kpiCopSub">Heat Pump Winter Cost: $485 vs. Legacy Heating: $1,125 (57% Reduction)</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Heat Pump Technology</label>
+          <select id="hpTech" onchange="calcCop()">
+            <option value="3.6" selected>Hyper-Heat Cold-Climate Inverter (-13°F/-25°C)</option>
+            <option value="3.1">Standard Air-Source Heat Pump (ASHP)</option>
+            <option value="4.2">Ground-Source / Geothermal Heat Pump</option>
+          </select>
+        </div>
+        <div>
+          <label>Compared Legacy Fuel</label>
+          <select id="legacyFuel" onchange="calcCop()">
+            <option value="electric" selected>Electric Baseboard / Space Heaters (COP 1.0)</option>
+            <option value="oil">Heating Oil / Kerosene Boiler (85% Eff)</option>
+            <option value="lpg">Propane / LPG Furnace (88% Eff)</option>
+            <option value="gas">Mains Natural Gas Condensing Boiler (92% Eff)</option>
+          </select>
+        </div>
+        <div>
+          <label>Electricity Rate (per kWh)</label>
+          <input type="number" id="elecRate" value="0.18" step="0.01" oninput="calcCop()">
+        </div>
+        <div>
+          <label>Winter Heating Hours / Season</label>
+          <input type="number" id="winterHours" value="1800" step="100" oninput="calcCop()">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-2">
+    <div class="card">
+      <h2>Whole-Home Multi-Zone Heat Pump Schedule & Reference</h2>
+      <div id="zoneList"></div>
+      <button class="btn-primary" onclick="window.print()">Export / AirPrint Whole-Home HVAC Load Report</button>
+    </div>
+    <div class="card">
+      <h2>US / UK / EU Mini-Split & ASHP Sizing Reference Chart</h2>
+      <table>
+        <thead><tr><th>Nominal Size</th><th>Cooling/Heating BTU</th><th>Thermal kW</th><th>Max Insulated Area</th></tr></thead>
+        <tbody>
+          <tr><td>0.75 Ton (Single Zone)</td><td>9,000 BTU/hr</td><td>2.6 kW</td><td>250–350 ft² (23–32 m²)</td></tr>
+          <tr><td>1.0 Ton (Bedroom/Office)</td><td>12,000 BTU/hr</td><td>3.5 kW</td><td>350–500 ft² (32–46 m²)</td></tr>
+          <tr><td>1.5 Ton (Living Room)</td><td>18,000 BTU/hr</td><td>5.3 kW</td><td>500–750 ft² (46–70 m²)</td></tr>
+          <tr><td>2.0 Ton (Open Concept)</td><td>24,000 BTU/hr</td><td>7.0 kW</td><td>750–1,050 ft² (70–98 m²)</td></tr>
+          <tr><td>3.0 Ton (Whole-Home ASHP)</td><td>36,000 BTU/hr</td><td>10.5 kW</td><td>1,100–1,600 ft² (102–148 m²)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

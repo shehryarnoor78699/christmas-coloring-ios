@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Snow Load & Roof Ice Dam Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Snow Load & Roof Ice Dam Pro</h1>
+    <p>ASCE-7 / Eurocode Structural Roof Snow Load & Attic Ice-Dam Solver</p>
+  </div>
+  <span class="badge">WINTER PRO</span>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab(0)">1. Roof Snow Load CAD</button>
+  <button class="tab-btn" onclick="switchTab(1)">2. Ice Dam & Attic Vent</button>
+  <button class="tab-btn" onclick="switchTab(2)">3. Property Roof Ledger</button>
+</div>
+
+<div class="container">
+  <div class="panel active" id="panel-0">
+    <div class="card">
+      <h2>Interactive Roof Pitch & Snow Pack Structural Load Blueprint</h2>
+      <canvas id="snowCanvas" width="680" height="340"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiSnowMain">26.4 PSF (1.26 kN/m²) • Total: 19.8 Tons</div>
+        <div class="kpi-sub" id="kpiSnowSub">SAFETY STATUS: SAFE (66% of 40 PSF Residential Truss Limit) • Pitch Shed Factor Cs: 0.88</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Snow Pack Type & Density</label>
+          <select id="snowType" onchange="calcSnow()">
+            <option value="0.65">Fresh Dry Powder (7.8 lbs/ft³ • 125 kg/m³)</option>
+            <option value="1.25" selected>Settled Damp Winter Pack (15 lbs/ft³ • 240 kg/m³)</option>
+            <option value="2.10">Heavy Wet Storm / Rain-on-Snow (25 lbs/ft³ • 400 kg/m³)</option>
+            <option value="3.80">Compacted Glacial Ice Crust (45 lbs/ft³ • 720 kg/m³)</option>
+          </select>
+        </div>
+        <div>
+          <label>Measured Snow Depth (in)</label>
+          <input type="number" id="snowDepth" value="24" step="1" oninput="calcSnow()">
+        </div>
+        <div>
+          <label>Roof Footprint Area (sq ft)</label>
+          <input type="number" id="roofArea" value="1500" step="50" oninput="calcSnow()">
+        </div>
+        <div>
+          <label>Roof Pitch (Rise / 12)</label>
+          <select id="roofPitch" onchange="calcSnow()">
+            <option value="1.0">Flat / Low Slope (0/12 to 2/12 • Cs 1.00)</option>
+            <option value="0.95">Moderate Gable (4/12 to 6/12 • Cs 0.95)</option>
+            <option value="0.88" selected>Standard Steep Gable (8/12 • Cs 0.88)</option>
+            <option value="0.65">Alpine A-Frame Metal Roof (12/12 • Cs 0.65)</option>
+          </select>
+        </div>
+        <div>
+          <label>Roof Design Capacity Limit (PSF)</label>
+          <select id="roofLimit" onchange="calcSnow()">
+            <option value="25">Sunroom / Carport / Patio Cover (25 PSF)</option>
+            <option value="40" selected>Standard Residential Wood Truss (40 PSF)</option>
+            <option value="65">Northern / Mountain Heavy Timber (65 PSF)</option>
+          </select>
+        </div>
+        <div>
+          <label>Wind Drift Exposure Factor (Ce)</label>
+          <select id="driftFactor" onchange="calcSnow()">
+            <option value="0.9">Wind-Swept Open Ridge (Ce 0.9)</option>
+            <option value="1.0" selected>Standard Suburban Exposure (Ce 1.0)</option>
+            <option value="1.25">Sheltered Leeward Valley Drift (Ce 1.25)</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="saveRoof()">+ Save Building Roof to Winter Property Ledger</button>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-1">
+    <div class="card">
+      <h2>Attic Ice-Dam Thermal Bleed & Soffit-to-Ridge Ventilation Solver</h2>
+      <canvas id="iceCanvas" width="680" height="320"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiIceMain">Ice Dam Risk: MODERATE • Req. NFA: 720 sq in</div>
+        <div class="kpi-sub" id="kpiIceSub">Install 360 sq in Soffit Intake + 360 sq in Ridge Exhaust & Air-Seal Attic Bypass Penetrations</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Attic Floor Area (sq ft)</label>
+          <input type="number" id="atticArea" value="1500" oninput="calcIce()">
+        </div>
+        <div>
+          <label>Attic Ceiling Insulation R-Value</label>
+          <select id="atticR" onchange="calcIce()">
+            <option value="19">Under-Insulated Legacy Attic (R-19 • High Ice Dam Risk)</option>
+            <option value="38" selected>Standard Fiberglass Batts (R-38 • Moderate Risk)</option>
+            <option value="60">Cold-Roof Blown Cellulose + Baffles (R-60 • Low Risk)</option>
+          </select>
+        </div>
+        <div>
+          <label>Outdoor Temp (°F)</label>
+          <input type="number" id="outTempIce" value="20" oninput="calcIce()">
+        </div>
+        <div>
+          <label>Ventilation Ratio Code</label>
+          <select id="ventRatio" onchange="calcIce()">
+            <option value="150">IRC 1:150 Standard Unbalanced</option>
+            <option value="300" selected>IRC 1:300 Balanced Soffit + Ridge + Vapor Barrier</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-2">
+    <div class="card">
+      <h2>Saved Winter Property Roof & Structure Schedule</h2>
+      <div id="roofList"></div>
+      <button class="btn-primary" onclick="window.print()">Export / AirPrint Winter Roof Inspection Report</button>
+    </div>
+    <div class="card">
+      <h2>ASCE-7 & Eurocode EN 1991-1-3 Snow Density Reference</h2>
+      <table>
+        <thead><tr><th>Snow Layer Type</th><th>Density (lbs/ft³)</th><th>PSF per Foot Depth</th><th>Action Threshold</th></tr></thead>
+        <tbody>
+          <tr><td>Fresh Cold Powder</td><td>6–8 lbs/ft³</td><td>6–8 PSF / ft</td><td>Monitor above 36" depth</td></tr>
+          <tr><td>Settled Damp Pack</td><td>14–18 lbs/ft³</td><td>14–18 PSF / ft</td><td>Rake eaves above 24" depth</td></tr>
+          <tr><td>Wet Heavy Rain-on-Snow</td><td>22–30 lbs/ft³</td><td>22–30 PSF / ft</td><td>Immediate roof rake above 15"</td></tr>
+          <tr><td>Solid Eave Ice Dam</td><td>55–57 lbs/ft³</td><td>56 PSF / ft</td><td>Apply calcium chloride socks</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

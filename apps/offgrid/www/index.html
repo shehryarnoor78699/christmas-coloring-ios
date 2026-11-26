@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>VanLife & Off-Grid Battery CAD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>VanLife & Off-Grid Battery CAD</h1>
+    <p>12V/24V/48V LiFePO4 Bank, Wire Gauge (AWG/mm²) & Winter Solar Studio</p>
+  </div>
+  <span class="badge">ELECTRICAL CAD</span>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab(0)">1. Battery & Wire CAD</button>
+  <button class="tab-btn" onclick="switchTab(1)">2. Winter Solar & Autonomy</button>
+  <button class="tab-btn" onclick="switchTab(2)">3. Load BOM & Schedule</button>
+</div>
+
+<div class="container">
+  <div class="panel active" id="panel-0">
+    <div class="card">
+      <h2>Interactive 12V/24V/48V Battery Bank, Fuse & Cable Voltage-Drop CAD</h2>
+      <canvas id="wireCanvas" width="680" height="340"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiWireMain">2/0 AWG (70 mm²) • 250A Class-T Fuse</div>
+        <div class="kpi-sub" id="kpiWireSub">Peak Draw: 185.2 A @ 12.8V • Voltage Drop: 1.42% (0.18V) • Winter Derated Bank: 368 Ah</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>System DC Voltage</label>
+          <select id="sysVolt" onchange="calcWire()">
+            <option value="12.8" selected>12V Nominal LiFePO4 (12.8V)</option>
+            <option value="25.6">24V Nominal LiFePO4 (25.6V)</option>
+            <option value="51.2">48V Server Rack Off-Grid (51.2V)</option>
+          </select>
+        </div>
+        <div>
+          <label>Inverter / Continuous Load (W)</label>
+          <input type="number" id="loadWatts" value="2200" step="100" oninput="calcWire()">
+        </div>
+        <div>
+          <label>One-Way Cable Length (ft)</label>
+          <input type="number" id="cableFeet" value="6" step="1" oninput="calcWire()">
+        </div>
+        <div>
+          <label>Battery Bank Capacity (Ah)</label>
+          <input type="number" id="bankAh" value="400" step="50" oninput="calcWire()">
+        </div>
+        <div>
+          <label>Winter Ambient Battery Temp</label>
+          <select id="winterBattTemp" onchange="calcWire()">
+            <option value="1.0">77°F / 25°C (100% Rated Capacity)</option>
+            <option value="0.92" selected>32°F / 0°C Winter Cabin (92% LiFePO4 Usable)</option>
+            <option value="0.78">14°F / -10°C Sub-Zero Heated Box (78% Usable)</option>
+          </select>
+        </div>
+        <div>
+          <label>Max Allowed Voltage Drop</label>
+          <select id="maxDrop" onchange="calcWire()">
+            <option value="3" selected>3.0% ABYC/NEC Critical Inverter Bus</option>
+            <option value="5">5.0% General DC Appliance Branch</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="saveCircuit()">+ Add Circuit to Electrical BOM & Fuse Schedule</button>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-1">
+    <div class="card">
+      <h2>Winter Solar Array, Alternator DC-DC & Off-Grid Autonomy Lab</h2>
+      <canvas id="solarCanvas" width="680" height="320"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiSolarMain">2.8 Days Off-Grid Autonomy • +1,820 Wh/day</div>
+        <div class="kpi-sub" id="kpiSolarSub">Winter Solar: 1,120 Wh + Alternator DC-DC: 700 Wh vs. Daily Winter Load: 1,650 Wh</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Solar Array Wattage (W)</label>
+          <input type="number" id="solarWatts" value="600" step="50" oninput="calcSolar()">
+        </div>
+        <div>
+          <label>Winter Peak Sun Hours (US/UK/EU)</label>
+          <select id="sunHours" onchange="calcSolar()">
+            <option value="1.4">UK / Germany / Pacific NW Winter (1.4 hrs)</option>
+            <option value="2.3" selected>US Mid-Latitude / Central Europe Winter (2.3 hrs)</option>
+            <option value="4.2">US Southwest / Spain / Alpine Tilt (4.2 hrs)</option>
+          </select>
+        </div>
+        <div>
+          <label>DC-DC Alternator Charger (A)</label>
+          <input type="number" id="dcdcAmps" value="50" step="10" oninput="calcSolar()">
+        </div>
+        <div>
+          <label>Daily Winter Load (Wh/day)</label>
+          <input type="number" id="dailyWh" value="1650" step="100" oninput="calcSolar()">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-2">
+    <div class="card">
+      <h2>Off-Grid Electrical Circuit, Cable & Fuse BOM Schedule</h2>
+      <div id="circuitList"></div>
+      <button class="btn-primary" onclick="window.print()">Export / AirPrint Off-Grid Wiring & Fuse Diagram</button>
+    </div>
+    <div class="card">
+      <h2>ABYC / NEC / IEC Copper Cable Gauge (AWG to Metric mm²) Chart</h2>
+      <table>
+        <thead><tr><th>US AWG Gauge</th><th>UK/EU Metric (mm²)</th><th>Max Ampacity (105°C)</th><th>Recommended Fuse</th></tr></thead>
+        <tbody>
+          <tr><td>10 AWG</td><td>6 mm²</td><td>40 A</td><td>30A – 40A ATC/MIDI</td></tr>
+          <tr><td>6 AWG</td><td>16 mm²</td><td>95 A</td><td>80A – 100A MIDI/ANL</td></tr>
+          <tr><td>2 AWG</td><td>35 mm²</td><td>170 A</td><td>150A – 175A ANL/MRBF</td></tr>
+          <tr><td>2/0 AWG</td><td>70 mm²</td><td>285 A</td><td>250A Class-T High-AIC</td></tr>
+          <tr><td>4/0 AWG</td><td>120 mm²</td><td>380 A</td><td>350A – 400A Class-T</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

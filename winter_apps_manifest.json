@@ -1,0 +1,32 @@
+{
+  "heatpump": {
+    "slug": "heatpump",
+    "name": "Heat Pump & Mini Split Sizing",
+    "sku": "HEATPUMPSIZINGPRO2026",
+    "bundle_id": "com.shehryarnoor.heatpumpsizing.ios",
+    "prof_name": "HeatPumpSizing_AppStore",
+    "bundle_res_id": "HR4G7AQSCL",
+    "profile_uuid": "d0e9232d-de03-4665-b9e0-b9aee79fe335",
+    "profile_path": "D:\\WinterStudiosMultiIOS\\profiles\\HeatPumpSizing_AppStore.mobileprovision"
+  },
+  "snowload": {
+    "slug": "snowload",
+    "name": "Snow Load & Roof Ice Dam Pro",
+    "sku": "SNOWLOADROOFPRO2026",
+    "bundle_id": "com.shehryarnoor.snowloadroof.ios",
+    "prof_name": "SnowLoadRoof_AppStore",
+    "bundle_res_id": "A9R4MVU83P",
+    "profile_uuid": "d43a4a7c-fae0-48d6-8794-0b3a84261c47",
+    "profile_path": "D:\\WinterStudiosMultiIOS\\profiles\\SnowLoadRoof_AppStore.mobileprovision"
+  },
+  "offgrid": {
+    "slug": "offgrid",
+    "name": "VanLife & Off-Grid Battery CAD",
+    "sku": "OFFGRIDBATTERYCAD2026",
+    "bundle_id": "com.shehryarnoor.offgridbattery.ios",
+    "prof_name": "OffGridBattery_AppStore",
+    "bundle_res_id": "MM8N93G2CA",
+    "profile_uuid": "35e00685-5bea-4ce8-8bf8-1c24b7ce115e",
+    "profile_path": "D:\\WinterStudiosMultiIOS\\profiles\\OffGridBattery_AppStore.mobileprovision"
+  }
+}
