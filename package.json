@@ -1,0 +1,20 @@
+{
+  "name": "christmas-coloring-studio-pro-ios",
+  "version": "1.0.0",
+  "description": "Christmas Coloring Studio Pro — Premium Ad-Free iOS Edition ($4.99)",
+  "main": "www/index.html",
+  "scripts": {
+    "sync:ios": "cap sync ios",
+    "copy:ios": "cap copy ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.1",
+    "@capacitor/haptics": "^6.0.1",
+    "@capacitor/ios": "^6.1.2",
+    "@capacitor/share": "^6.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}

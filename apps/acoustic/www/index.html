@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Acoustic Room Modes & Trap CAD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Acoustic Room Modes & Trap CAD</h1>
+    <p>3D Axial Standing Waves, Sabine RT60 Reverb & First-Reflection CAD</p>
+  </div>
+  <span class="badge">STUDIO CAD</span>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab(0)">1. Standing Wave CAD</button>
+  <button class="tab-btn" onclick="switchTab(1)">2. RT60 & Bass Traps</button>
+  <button class="tab-btn" onclick="switchTab(2)">3. Modal Frequency Log</button>
+</div>
+
+<div class="container">
+  <div class="panel active" id="panel-0">
+    <div class="card">
+      <h2>Interactive Room Modes, 38% Sweet Spot & First-Reflection Ray-Tracing CAD</h2>
+      <canvas id="roomCanvas" width="680" height="340"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiRoomMain">F1 Axial Modes: 35.3 Hz (L) • 47.1 Hz (W) • 62.8 Hz (H)</div>
+        <div class="kpi-sub" id="kpiRoomSub">38% Mix Position: 6.08 ft from Front Wall • Schroeder Frequency: 184 Hz</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Room Length (ft)</label>
+          <input type="number" id="rmLen" value="16.0" step="0.5" oninput="calcRoom()">
+        </div>
+        <div>
+          <label>Room Width (ft)</label>
+          <input type="number" id="rmWid" value="12.0" step="0.5" oninput="calcRoom()">
+        </div>
+        <div>
+          <label>Ceiling Height (ft)</label>
+          <input type="number" id="rmHgt" value="9.0" step="0.5" oninput="calcRoom()">
+        </div>
+        <div>
+          <label>Studio Application Target</label>
+          <select id="rmTarget" onchange="calcRoom()">
+            <option value="0.28" selected>Mixing & Mastering Control Room (RT60 0.28s)</option>
+            <option value="0.22">Vocal Booth / Podcast Broadcast (RT60 0.22s)</option>
+            <option value="0.38">Dolby Atmos Home Theater (RT60 0.38s)</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="saveRoom()">+ Save Room Profile to Acoustic Treatment Schedule</button>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-1">
+    <div class="card">
+      <h2>Sabine / Eyring RT60 Decay & Broadband / Corner Bass Trap Calculator</h2>
+      <canvas id="rtCanvas" width="680" height="320"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiRtMain">Untreated RT60: 0.74s -> Treated: 0.27s</div>
+        <div class="kpi-sub" id="kpiRtSub">Recommended Treatment: 4 Corner Superchunk Bass Traps + 8 Broadband 4" Panels (24x48")</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Floor & Wall Surface Type</label>
+          <select id="surfType" onchange="calcRt()">
+            <option value="0.04" selected>Hardwood Floor + Drywall (Live Room)</option>
+            <option value="0.07">Medium Carpet + Painted Drywall</option>
+            <option value="0.02">Concrete / Glass / Brick Loft (Very Reflective)</option>
+          </select>
+        </div>
+        <div>
+          <label>24"x48" Broadband Absorber Panels</label>
+          <input type="number" id="numPanels" value="8" step="1" oninput="calcRt()">
+        </div>
+        <div>
+          <label>Corner Tri-Trap Bass Traps</label>
+          <input type="number" id="numTraps" value="4" step="1" oninput="calcRt()">
+        </div>
+        <div>
+          <label>Ceiling Cloud Absorber Panels</label>
+          <input type="number" id="numClouds" value="2" step="1" oninput="calcRt()">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-2">
+    <div class="card">
+      <h2>Axial Room Mode Resonance Table & Treatment Blueprint</h2>
+      <div id="roomList"></div>
+      <button class="btn-primary" onclick="window.print()">Export / AirPrint Studio Acoustic Placement Report</button>
+    </div>
+    <div class="card">
+      <h2>Bolt & Sepmeyer Optimal Acoustic Room Dimension Ratios</h2>
+      <table>
+        <thead><tr><th>Standard Ratio Name</th><th>Height : Width : Length</th><th>Modal Spacing Grade</th></tr></thead>
+        <tbody>
+          <tr><td>Sepmeyer Ratio A</td><td>1.00 : 1.14 : 1.39</td><td>Excellent Low-End Balance</td></tr>
+          <tr><td>Sepmeyer Ratio B</td><td>1.00 : 1.28 : 1.54</td><td>Ideal Mixing Control Room</td></tr>
+          <tr><td>Louden Optimal</td><td>1.00 : 1.40 : 1.90</td><td>Smooth 40Hz–200Hz Distribution</td></tr>
+          <tr><td>Golden Section</td><td>1.00 : 1.26 : 1.59</td><td>Audiophile Listening Suite</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

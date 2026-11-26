@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>EV Home Charger & Panel Load</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>EV Home Charger & Panel Load</h1>
+    <p>NEC 220.82 / UK 7.4kW / EU 11–22kW 3-Phase Wallbox & Breaker CAD</p>
+  </div>
+  <span class="badge">EVSE CAD</span>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab(0)">1. Panel & Breaker CAD</button>
+  <button class="tab-btn" onclick="switchTab(1)">2. Winter Charge & Tariff</button>
+  <button class="tab-btn" onclick="switchTab(2)">3. Permit Load Schedule</button>
+</div>
+
+<div class="container">
+  <div class="panel active" id="panel-0">
+    <div class="card">
+      <h2>Interactive Main Service Panel & EV Charger 80% Continuous Load CAD</h2>
+      <canvas id="evCanvas" width="680" height="340"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiEvMain">60A Breaker • 6 AWG (16 mm²) Copper</div>
+        <div class="kpi-sub" id="kpiEvSub">48A Continuous EVSE (11.5 kW) • Main Panel Load: 142A / 200A (71% Safe Headroom)</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Grid Standard (US / UK / EU)</label>
+          <select id="evGrid" onchange="calcEv()">
+            <option value="US" selected>USA / Canada 240V Split-Phase (NEC 80% Rule)</option>
+            <option value="UK">UK 230V Single-Phase (7.4 kW / 32A BS 7671)</option>
+            <option value="EU">Europe 400V 3-Phase (11 kW / 22 kW IEC)</option>
+          </select>
+        </div>
+        <div>
+          <label>EV Charger Output Rating</label>
+          <select id="evAmps" onchange="calcEv()">
+            <option value="16">16A Continuous (3.8 kW / 11 kW 3-Phase)</option>
+            <option value="32">32A Continuous (7.4 kW / 22 kW 3-Phase)</option>
+            <option value="40">40A Continuous (9.6 kW NEMA 14-50)</option>
+            <option value="48" selected>48A Hardwired Wallbox (11.5 kW Fast Level 2)</option>
+            <option value="64">64A High-Output Pro Charger (15.4 kW)</option>
+          </select>
+        </div>
+        <div>
+          <label>Main Service Panel Rating (A)</label>
+          <select id="mainPanel" onchange="calcEv()">
+            <option value="100">100A Main Service Panel (Legacy Home)</option>
+            <option value="150">150A Main Service Panel</option>
+            <option value="200" selected>200A Modern Residential Service</option>
+          </select>
+        </div>
+        <div>
+          <label>Existing Home Demand Load (A)</label>
+          <input type="number" id="baseLoadA" value="82" step="5" oninput="calcEv()">
+        </div>
+        <div>
+          <label>Conduit Run Length (ft or m)</label>
+          <input type="number" id="runLen" value="45" step="5" oninput="calcEv()">
+        </div>
+        <div>
+          <label>Wiring Method & Temp Rating</label>
+          <select id="wireType" onchange="calcEv()">
+            <option value="THHN" selected>THHN/THWN-2 in Conduit (90°C/75°C Terminals)</option>
+            <option value="NM">NM-B Romex Cable (60°C Ampacity Limit)</option>
+            <option value="SWA">UK/EU SWA Armored XLPE (mm² Metric)</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="saveEvLoad()">+ Add EVSE Circuit to Electrical Permit Schedule</button>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-1">
+    <div class="card">
+      <h2>Winter Sub-Zero Battery Preconditioning & Night Tariff Charge Lab</h2>
+      <canvas id="chargeCanvas" width="680" height="320"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiChgMain">5h 12m (10% -> 80%) • $4.75 Off-Peak</div>
+        <div class="kpi-sub" id="kpiChgSub">Winter Battery Heater Overhead: +1.1 kWh • Adds +218 Miles (350 km) Overnight</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>EV Battery Pack Capacity (kWh)</label>
+          <input type="number" id="battKwh" value="78" step="2" oninput="calcCharge()">
+        </div>
+        <div>
+          <label>Ambient Garage / Driveway Temp</label>
+          <select id="winterEvTemp" onchange="calcCharge()">
+            <option value="1.0">68°F / 20°C Mild Garage (94% Charger Eff)</option>
+            <option value="1.08" selected>25°F / -4°C Winter Driveway (+8% Heater Draw)</option>
+            <option value="1.18">0°F / -18°C Deep Freeze (+18% Thermal Prep)</option>
+          </select>
+        </div>
+        <div>
+          <label>Off-Peak Night Tariff ($/£/€ per kWh)</label>
+          <input type="number" id="nightRate" value="0.09" step="0.01" oninput="calcCharge()">
+        </div>
+        <div>
+          <label>Target SOC Window (% Added)</label>
+          <select id="socWindow" onchange="calcCharge()">
+            <option value="0.50">30% -> 80% Daily Commute (+50%)</option>
+            <option value="0.70" selected>10% -> 80% Standard Fast Window (+70%)</option>
+            <option value="0.90">10% -> 100% Winter Road-Trip Full (+90%)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-2">
+    <div class="card">
+      <h2>NEC 220.82 / BS 7671 Whole-Home Service Panel Load Schedule</h2>
+      <div id="evLoadList"></div>
+      <button class="btn-primary" onclick="window.print()">Export / AirPrint EV Charger Permit Calculation Sheet</button>
+    </div>
+    <div class="card">
+      <h2>US NEC & UK/Europe IEC EV Charger Breaker & Cable Reference</h2>
+      <table>
+        <thead><tr><th>Continuous EV Amps</th><th>Required Breaker (125%)</th><th>US THHN Copper</th><th>UK/EU Metric</th></tr></thead>
+        <tbody>
+          <tr><td>16A (3.8 / 11 kW)</td><td>20A 2-Pole / 3-Pole</td><td>12 AWG</td><td>2.5 – 4 mm²</td></tr>
+          <tr><td>32A (7.4 / 22 kW)</td><td>40A Breaker</td><td>8 AWG</td><td>6 – 10 mm²</td></tr>
+          <tr><td>40A (9.6 kW NEMA)</td><td>50A Breaker</td><td>8 AWG / 6 AWG NM</td><td>10 mm²</td></tr>
+          <tr><td>48A (11.5 kW Hardwired)</td><td>60A Breaker</td><td>6 AWG THHN / 4 AWG NM</td><td>16 mm²</td></tr>
+          <tr><td>64A (15.4 kW Pro)</td><td>80A Breaker</td><td>4 AWG THHN</td><td>25 mm²</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

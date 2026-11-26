@@ -1,0 +1,32 @@
+{
+  "evcharger": {
+    "slug": "evcharger",
+    "name": "EV Home Charger & Panel Load",
+    "sku": "EVCHARGERPANELLOAD2026",
+    "bundle_id": "com.shehryarnoor.evchargerload.ios",
+    "prof_name": "EVChargerLoad_AppStore",
+    "bundle_res_id": "Z27QJTV99D",
+    "profile_uuid": "a3e39a1e-ae26-455c-b06b-6a02394b85ab",
+    "profile_path": "D:\\EuroUSProStudiosIOS\\profiles\\EVChargerLoad_AppStore.mobileprovision"
+  },
+  "acoustic": {
+    "slug": "acoustic",
+    "name": "Acoustic Room Modes & Trap CAD",
+    "sku": "ACOUSTICROOMCAD2026",
+    "bundle_id": "com.shehryarnoor.acousticroomcad.ios",
+    "prof_name": "AcousticRoomCAD_AppStore",
+    "bundle_res_id": "Y5P3HVGRZ5",
+    "profile_uuid": "12e9c564-dbdf-48a3-9ccd-27119517b06b",
+    "profile_path": "D:\\EuroUSProStudiosIOS\\profiles\\AcousticRoomCAD_AppStore.mobileprovision"
+  },
+  "sauna": {
+    "slug": "sauna",
+    "name": "Sauna Heater & Steam Room CAD",
+    "sku": "SAUNAHEATERCAD2026",
+    "bundle_id": "com.shehryarnoor.saunaheatercad.ios",
+    "prof_name": "SaunaHeaterCAD_AppStore",
+    "bundle_res_id": "Z2P65NNHCS",
+    "profile_uuid": "55c961cf-9217-454c-8971-d31ea2070f4f",
+    "profile_path": "D:\\EuroUSProStudiosIOS\\profiles\\SaunaHeaterCAD_AppStore.mobileprovision"
+  }
+}

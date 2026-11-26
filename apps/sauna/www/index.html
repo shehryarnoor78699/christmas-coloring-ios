@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Sauna Heater & Steam Room CAD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Sauna Heater & Steam Room CAD</h1>
+    <p>Finnish Sauna kW Sizing, Glass Thermal Penalty & Bench Ergonomics CAD</p>
+  </div>
+  <span class="badge">SAUNA PRO</span>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab(0)">1. Heater & Volume CAD</button>
+  <button class="tab-btn" onclick="switchTab(1)">2. Loyly Bench & Vent</button>
+  <button class="tab-btn" onclick="switchTab(2)">3. Electrical & Steam Specs</button>
+</div>
+
+<div class="container">
+  <div class="panel active" id="panel-0">
+    <div class="card">
+      <h2>Interactive Sauna Thermal Volume, Glass Penalty & Stove kW Blueprint</h2>
+      <canvas id="saunaCanvas" width="680" height="340"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiSaunaMain">9.0 kW Sauna Stove • 422 ft³ (11.9 m³) Corrected</div>
+        <div class="kpi-sub" id="kpiSaunaSub">Physical Volume: 336 ft³ + Glass/Tile Penalty: +86 ft³ • 50A 240V (US) or 16A 400V 3N~ (EU)</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Sauna Length (ft)</label>
+          <input type="number" id="snLen" value="7.0" step="0.5" oninput="calcSauna()">
+        </div>
+        <div>
+          <label>Sauna Width (ft)</label>
+          <input type="number" id="snWid" value="6.0" step="0.5" oninput="calcSauna()">
+        </div>
+        <div>
+          <label>Ceiling Height (ft — Ideal 7.0–7.5')</label>
+          <input type="number" id="snHgt" value="7.0" step="0.5" oninput="calcSauna()">
+        </div>
+        <div>
+          <label>Uninsulated Glass Door & Window (ft²)</label>
+          <input type="number" id="snGlass" value="22" step="2" oninput="calcSauna()">
+        </div>
+        <div>
+          <label>Stone / Tile / Brick Accent Wall (ft²)</label>
+          <input type="number" id="snStone" value="18" step="2" oninput="calcSauna()">
+        </div>
+        <div>
+          <label>Wall Construction & Location</label>
+          <select id="snWall" onchange="calcSauna()">
+            <option value="1.0" selected>Indoor Foil-Vapor R-13 Cedar/Spruce</option>
+            <option value="1.22">Outdoor Winter Barrel / Solid Log Sauna (+22%)</option>
+            <option value="1.35">Alpine Sub-Zero Outdoor Cabin Sauna (+35%)</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="saveSauna()">+ Save Sauna Build to Electrical & Timber Spec Sheet</button>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-1">
+    <div class="card">
+      <h2>Finnish 'Feet-Above-Stones' 2-Tier Bench & Mechanical Ventilation CAD</h2>
+      <canvas id="benchCanvas" width="680" height="320"></canvas>
+      <div class="kpi-banner">
+        <div class="kpi-main" id="kpiBenchMain">Upper Bench: 42" • Foot Bench: 26" • Stove Top: 24"</div>
+        <div class="kpi-sub" id="kpiBenchSub">Headroom Above Upper Bench: 42" (Optimal Finnish Loyly Pocket) • 6 ACPH Airflow</div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <label>Stove Guard & Stone Height (in)</label>
+          <input type="number" id="stoveH" value="24" step="1" oninput="calcBench()">
+        </div>
+        <div>
+          <label>Bather Capacity (24" Width / Person)</label>
+          <input type="number" id="bathers" value="4" step="1" oninput="calcBench()">
+        </div>
+        <div>
+          <label>Ventilation Method</label>
+          <select id="ventMode" onchange="calcBench()">
+            <option value="mech" selected>Trumpkin / VTT Mechanical Downdraft (Intake High / Exhaust Below Bench)</option>
+            <option value="grav">Traditional Gravity (Intake Under Stove / Upper Drying Vent)</option>
+          </select>
+        </div>
+        <div>
+          <label>Olivine Diabase Sauna Stones (lbs / kg)</label>
+          <select id="stoneMass" onchange="calcBench()">
+            <option value="110" selected>Standard Open-Tower Pillar (110 lbs / 50 kg)</option>
+            <option value="220">Heavy Loyly IKI / Mesh Pillar (220 lbs / 100 kg)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-2">
+    <div class="card">
+      <h2>Saved Sauna & Steam Room Project Schedule</h2>
+      <div id="saunaList"></div>
+      <button class="btn-primary" onclick="window.print()">Export / AirPrint Sauna Heater & Bench Blueprint</button>
+    </div>
+    <div class="card">
+      <h2>US 240V / UK 230V / Europe 400V 3-Phase Sauna Heater Wiring Chart</h2>
+      <table>
+        <thead><tr><th>Heater kW</th><th>Max Corrected Volume</th><th>US 240V 1-Ph</th><th>EU 400V 3N~</th></tr></thead>
+        <tbody>
+          <tr><td>6.0 kW</td><td>175 – 300 ft³ (5 – 8 m³)</td><td>30A • 10 AWG</td><td>3x10A • 5x1.5 mm²</td></tr>
+          <tr><td>8.0 kW</td><td>250 – 425 ft³ (7 – 12 m³)</td><td>40A • 8 AWG</td><td>3x16A • 5x2.5 mm²</td></tr>
+          <tr><td>9.0 kW</td><td>310 – 500 ft³ (9 – 14 m³)</td><td>50A • 8/6 AWG</td><td>3x16A • 5x2.5 mm²</td></tr>
+          <tr><td>10.5 kW</td><td>390 – 600 ft³ (11 – 17 m³)</td><td>50A/60A • 6 AWG</td><td>3x16A • 5x2.5 mm²</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
